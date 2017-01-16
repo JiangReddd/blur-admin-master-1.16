@@ -1,0 +1,58 @@
+<div class="widgets">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div ba-panel ba-panel-title="记录列表" ba-panel-class="with-scroll">
+        <div class="horizontal-scroll">
+          <table class="table">
+            <thead>
+            <tr class="sortable ">
+              <th class="table-id">#</th>
+              <th>用户id</th>
+              <th>用户名</th>
+              <th>积分条目</th>
+              <th>积分分数</th>
+              <th>上传者</th>
+              <th>月份</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th><input ng-model="search.userId"  placeholder="Search userId" class="input-sm form-control search-input"
+                         type="search"/></th>
+              <th><input ng-model="search.userName" placeholder="Search Last Name" class="input-sm form-control search-input"
+                         type="search"/></th>
+              <th><input ng-model="search.creditItem" placeholder="Search creditItem" class="input-sm form-control search-input"
+                         type="search"/></th>
+              <th><input ng-model="search.creditScore" placeholder="Search creditScore" class="input-sm form-control search-input"
+                         type="search"/></th>
+              <th><input ng-model="search.updateUser" placeholder="Search updateUser" class="input-sm form-control search-input" type="search"/>
+              </th>
+              <th><input ng-model="search.month" placeholder="Search month" class="input-sm form-control search-input" type="search"/>
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr  ng-repeat="item in releaseCtrl.smartTableData | filter:search:strict">
+              <td class="table-id">{{item.id}}</td>
+              <td>{{item.userId}}</td>
+              <td>{{item.userName}}</td>
+              <td>{{item.creditItem}}</td>
+              <td>{{item.creditScore}}</td>
+              <td>{{item.updateUser}}</td>
+              <td>{{item.month}}</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+              <td colspan="7" class="text-center">
+                <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
+              </td>
+            </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

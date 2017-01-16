@@ -1,0 +1,30 @@
+[
+    {
+        "userId" : "123f",
+        "userName" : "李伟",
+        "workNumber" : "8888",
+        "takeOverNumber" : "112d",
+        "isInService" : "1",
+        "telephoneNumber" : "13812345678",
+        "picturePath" : "...",
+        "groupId" : "333d"
+    },{
+        "userId" : "123g",
+        "userName" : "张非",
+        "workNumber" : "8888",
+        "takeOverNumber" : "112d",
+        "isInService" : "1",
+        "telephoneNumber" : "13812345678",
+        "picturePath" : "...",
+        "groupId" : "333d"
+    },{
+        "userId" : "123h",
+        "userName" : "李伟而",
+        "workNumber" : "8888",
+        "takeOverNumber" : "112d",
+        "isInService" : "0",
+        "telephoneNumber" : "13812345678",
+        "picturePath" : "...",
+        "groupId" : "333d"
+    }
+    ]

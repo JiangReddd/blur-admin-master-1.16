@@ -1,0 +1,65 @@
+<div class="widgets">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div ba-panel ba-panel-title="勋章" ba-panel-class="with-scroll">
+        <div class="horizontal-scroll">
+          <table class="table">
+            <thead>
+            <tr class="sortable ">
+              <th class="table-id">#</th>
+              <th>用户ID</th>
+              <th>用户名</th>
+              <th>工号</th>
+              <th>接续工号</th>
+              <th>是否在职</th>
+              <th>手机号</th>
+              <th>组别</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th><input ng-model="search.userId" placeholder="Search userId" class="input-sm form-control search-input"
+                         type="search"/></th>
+              <th><input ng-model="search.userName" placeholder="Search userName" class="input-sm form-control search-input"
+                         type="search"/></th>
+              <th><input ng-model="search.workNumber" placeholder="Search workNumber" class="input-sm form-control search-input"
+                         type="search"/></th>
+              <th><input ng-model="search.takeOverNumber" placeholder="Search takeOverNumber" class="input-sm form-control search-input" type="search"/>
+              </th>
+              <th><input ng-model="search.isInService" placeholder="Search Available" class="input-sm form-control search-input" type="search"/>
+              </th>
+              <th><input ng-model="search.telephoneNumber" placeholder="Search Available" class="input-sm form-control search-input" type="search"/>
+              </th>
+              <th><input ng-model="search.groupId" placeholder="Search Available" class="input-sm form-control search-input" type="search"/>
+              </th>
+              <th><a ui-sref="management.userManagement.add">新增</a></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="item in managementCtrl.smartTableData | filter:search:strict">
+              <td class="table-id"></td>
+              <td>{{item.userId}}</td>
+              <td>{{item.userName}}</td>
+              <td>{{item.workNumber}}</td>
+              <td>{{item.takeOverNumber}}</td>
+              <td>{{item.isInService}}</td>
+              <td>{{item.telephoneNumber}}</td>
+              <td>{{item.groupId}}</td>
+              <td><a ui-sref="management.userManagement.modify({userId: item.userId})">修改</a></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+              <td colspan="9" class="text-center">
+                <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
+              </td>
+            </tr>
+            </tfoot>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

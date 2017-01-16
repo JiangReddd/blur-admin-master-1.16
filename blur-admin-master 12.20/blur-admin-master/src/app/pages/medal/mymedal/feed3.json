@@ -1,0 +1,50 @@
+[
+    {
+        "medalName":"金点子",
+        "type": "text-message",
+        "userId":"liyi",
+        "userName":"李毅",
+        "medalEnName": "jindianzi",
+        "level":"1"
+    },    
+    {
+        "medalName":"A咖王",
+        "type": "text-message",
+        "userId":"liyi",
+        "userName":"李毅",
+        "medalEnName": "Akawang",
+        "level":"1"
+    },    
+    {
+        "medalName":"高产王",
+        "type": "text-message",
+        "userId":"liyi",
+        "userName":"李毅",
+        "medalEnName": "gaochanwang",
+        "level":"3"
+    },
+        {
+        "medalName":"笔杆子",
+        "type": "text-message",
+        "userId":"liyi",
+        "userName":"李毅",
+        "medalEnName": "biganzi",
+        "level":"3"
+    },
+        {
+        "medalName":"高效王",
+        "type": "text-message",
+        "userId":"liyi",
+        "userName":"李毅",
+        "medalEnName": "gaoxiaowang",
+        "level":"1"
+    },
+        {
+        "medalName":"讲师",
+        "type": "text-message",
+        "userId":"liyi",
+        "userName":"李毅",
+        "medalEnName": "jiangshi",
+        "level":"5"
+    }
+    ]

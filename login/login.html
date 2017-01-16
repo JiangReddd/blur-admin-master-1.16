@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blur Admin</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+
+  <link rel="stylesheet" href="css/Ionicons/css/ionicons.css">
+  <link rel="stylesheet" href="css/animate.css/animate.css">
+  <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-select/dist/css/bootstrap-select.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/auth.css">
+
+  <script src="https://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+
+</head>
+<body>
+<main class="auth-main">
+  <div class="auth-block">
+    <h1>勋章积分系统</h1>
+    <a href="reg.html" class="auth-link">第一次来吗？那就赶紧注册吧！</a>
+
+    <form class="form-horizontal"  ng-app="login" ng-controller="loginCtrl as controller">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="userName" placeholder="用户名" ng-model="controller.credentials.userName">
+        </div>{{loginCtrl.credentials.userName}}
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="password" placeholder="密码" ng-model="controller.credentials.password">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default btn-auth" ng-click="controller.login()">登录</button>
+          <!-- <a href class="forgot-pass">Forgot password?</a> -->
+        </div>
+      </div>
+    </form>
+
+<!--     <div class="auth-sep"><span><span>or Sign in with one click</span></span></div>
+
+    <div class="al-share-auth">
+      <ul class="al-share clearfix">
+        <li><i class="socicon socicon-facebook" title="Share on Facebook"></i></li>
+        <li><i class="socicon socicon-twitter" title="Share on Twitter"></i></li>
+        <li><i class="socicon socicon-google" title="Share on Google Plus"></i></li>
+      </ul>
+    </div> -->
+  </div>
+
+  <script>
+  var app = angular.module('login', []);
+  app.controller('loginCtrl', function($rootScope, $http, $location,$scope) {
+    var self = this;
+  self.credentials = {};
+  self.authenticate = function(credentials, callback,$scope) {
+    //console.log($rootScope.credentials);
+
+
+    var headers = credentials ? {
+      authorization : "Basic "
+          + btoa(self.credentials.userName + ":"
+              + self.credentials.password)
+    } : {};
+    //console.log(headers);
+    $http.get('user', {
+      headers : headers
+    }).then(function(response) {
+      if (response.data.name) {
+        $rootScope.authenticated = true;
+      } else {
+        $rootScope.authenticated = false;
+      }
+      callback && callback();
+    }, function() {
+      $rootScope.authenticated = false;
+      callback && callback();
+    });
+
+  }
+
+  self.authenticate();
+  self.login = function() {
+    
+      self.authenticate(self.credentials, function() {
+      if ($rootScope.authenticated) {
+        console.log("Login succeeded")
+        $location.path("/");
+        self.error = false;
+        $rootScope.authenticated = true;
+      } else {
+        console.log("Login failed")
+        $location.path("/login");
+        self.error = true;
+        $rootScope.authenticated = false;
+      }
+    });
+
+  };
+
+  self.logout = function() {
+    $http.post('logout', {}).finally(function() {
+      $rootScope.authenticated = false;
+      $location.path("/");
+    });
+  }
+
+});
+  </script>
+</main>
+</body>
+</html>

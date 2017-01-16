@@ -1,0 +1,46 @@
+<div class="side-message-navigation" ng-class="{'expanded': tabCtrl.navigationCollapsed}">
+  <div class="row pie-charts rank-pie">
+
+    <div class="pie-chart-item-container " ng-repeat="chart in charts" >
+      <div ba-panel >
+        <a style="cursor:pointer;" ng-click="chart.display=(chart.display=='none'?'block':'none')">
+          <div class="pie-chart-item">
+            <div class="kameleon-icon">
+              <img class="chart-imgicon" ng-src="{{::chart.img }}" alt=""></div>
+            <div class="description">
+              <div>{{ chart.description }}</div>
+              <div class="description-stats">{{ ::chart.stats }}</div>
+            </div>
+          </div>
+        </a>
+        <div class="table-panel" ba-panel class="horizontal-scroll" style="display:{{chart.display=(chart.display==undefined?'none':chart.display);}}">
+
+          <table class="table table-hover">
+            <thead>
+              <tr class="special-thead">
+                <th class="browser-icons"></th>
+                <th>用户名</th>
+                        <th class="align-right">奖牌数</th>
+                <th class="table-arr"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item in chart.list" class="no-top-border">
+                <td>
+                  <img ng-src="{{::item.image}}" width="32" height="32"></td>
+                <td ng-class="nowrap">{{item.browser}}</td>
+                <td class="align-right">{{item.visits}}</td>
+                <td class="table-arr"></td>
+
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+    </div>
+       <div style="clear:both"></div>
+  </div>
+
+</div>

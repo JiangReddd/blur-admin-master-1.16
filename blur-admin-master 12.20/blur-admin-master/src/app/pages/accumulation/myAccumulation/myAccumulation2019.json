@@ -1,0 +1,26 @@
+[
+	{
+		"id" : "1",
+		"userId" : "liyi",
+		"userName" : "李大而",
+		"creditItem" : "加班积分",
+		"creditScore" : "3",
+		"updateTime" : "2016.11"
+	},
+	{
+		"id" : "2",
+		"userId" : "liyi",
+		"userName" : "李一",
+		"creditItem" : "加班积分",
+		"creditScore" : "3",
+		"updateTime" : "2016.11"
+	},
+	{
+		"id" : "3",
+		"userId" : "liyi",
+		"userName" : "李一",
+		"creditItem" : "加班积分",
+		"creditScore" : "3",
+		"updateTime" : "2016.12"
+	}
+]

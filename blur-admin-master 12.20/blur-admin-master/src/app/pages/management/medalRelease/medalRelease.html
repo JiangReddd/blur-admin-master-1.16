@@ -1,0 +1,55 @@
+<div class="widgets">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div ba-panel ba-panel-title="记录列表" ba-panel-class="with-scroll">
+        <div class="horizontal-scroll">
+          <table class="table">
+            <thead>
+            <tr class="sortable ">
+              <th class="table-id">#</th>
+              <th >用户名</th>
+              <th >勋章名称</th>
+              <th >勋章类型</th>
+              <th >发放人</th>
+              <th >发放时间</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th><input ng-model="search.userName" placeholder="" class="input-sm form-control search-input"
+                         type="search"/></th>
+              <th><input ng-model="search.medalName" placeholder="" class="input-sm form-control search-input"
+                         type="search"/></th>
+              <th><input ng-model="search.medalType" placeholder="" class="input-sm form-control search-input"
+                         type="search"/></th>
+              <th><input ng-model="search.releaseUser" placeholder="" class="input-sm form-control search-input" type="search"/>
+              </th>
+              <th><input ng-model="search.releaseTime" placeholder="" class="input-sm form-control search-input" type="search"/>
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+<!--             <p>smartTableData:{{releaseCtrl.smartTableData}}</p> -->
+            <tr ng-repeat="item in releaseCtrl.smartTableData | filter:search:strict">
+              <td class="table-id">{{item.id}}</td>
+              <td>{{item.userName}}</td>
+              <td>{{item.medalName}}</td>
+              <td>{{item.medalType}}</td>
+              <td>{{item.releaseUser}}</td>
+              <td>{{item.releaseTime}}</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+              <td colspan="6" class="text-center">
+                <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
+              </td>
+            </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,26 @@
+<div class="widgets">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div
+          ba-panel
+          ba-panel-title="规则修改"
+          ba-panel-class="with-scroll">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="ruleIntro" class="col-sm-2 control-label">规则介绍</label>
+              <div class="col-sm-8">
+                <textarea class="form-control" placeholder="规则介绍" id="ruleIntro" ng-model="ModifyCtrl.rule.ruleInfo"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-warning" ng-click="ModifyCtrl.ruleModify()">保存</button>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+
+</div>
