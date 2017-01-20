@@ -18,28 +18,29 @@
             <div class="form-group">
               <label for="ruleTitle" class="col-sm-2 control-label">勋章名称</label>
               <div class="col-sm-8">
-                <input type="text" class="form-control" id="medalName" value="{{detailCtrl.mail.medalName}}">
+                <input type="text" class="form-control" id="medalName" ng-model="detailCtrl.mail.medalName">
               </div>
             </div>
             <div class="form-group">
               <label for="ruleTitle" class="col-sm-2 control-label">勋章拼音</label>
               <div class="col-sm-8">
-                <input type="text" class="form-control" id="medalEnName" value="{{detailCtrl.mail.medalEnName}}">
+                <input type="text" class="form-control" id="medalEnName" ng-model="detailCtrl.mail.medalEnName">
               </div>
             </div>
             <div class="form-group">
               <label for="ruleIntro" class="col-sm-2 control-label">勋章介绍</label>
               <div class="col-sm-8">
-                <textarea class="form-control" value="规则介绍" id="medalInfo">{{detailCtrl.mail.medalInfo}}</textarea>
+                <textarea class="form-control" ng-model="detailCtrl.mail.medalInfo" id="medalInfo"></textarea>
               </div>
             </div>
             <div class="form-group">
               <label for="ruleIntro" class="col-sm-2 control-label">勋章类型</label>
               <div class="col-sm-8">
-                <div ng-controller="medalOperationListAddCtrl as selectpickerVm">
-                    <select class="form-control selectpicker" selectpicker title="请选择类型"
-                            ng-model="selectpickerVm.standardSelected"
-                            ng-options="item as item.label for item in selectpickerVm.standardSelectItems">
+                <div>
+                    <select class="form-control selectpicker">
+                            <option value="常规" id="normal">常规</option>
+                            <option value="年度勋章" id="annual">年度勋章</option>
+                            <option value="职业生涯" id="career">职业生涯</option>
                     </select>
                 </div>
               </div>
@@ -49,13 +50,13 @@
               <div class="input-demo radio-demo row">
                 <div class="col-md-4">
                   <label class="radio-inline custom-radio nowrap">
-                    <input type="radio" name="inlineRadioOptions" id="growType" value="1">
+                    <input type="radio" name="growType" id="growType" value="1">
                     <span>可成长</span>
                   </label>
                 </div>
                 <div class="col-md-4">
                   <label class="radio-inline custom-radio nowrap">
-                    <input type="radio" name="inlineRadioOptions" id="growType1" value="0">
+                    <input type="radio" name="growType" id="growType1" value="0">
                     <span>不可成长</span>
                   </label>
                 </div>
@@ -66,19 +67,19 @@
             <div class="form-group">
               <label for="ruleIntro" class="col-sm-2 control-label">勋章图片</label>
               <div class="col-sm-8">
-                <input type="text" class="form-control" id="imageUrl" value="{{detailCtrl.mail.imageUrl}}">
+                <button class="btn btn-primary" ui-sref="management.medalOperationList.upload({medalId: detailCtrl.mail.medalId})">上传图片</button>
               </div>
             </div>
             <div class="form-group">
               <label for="ruleIntro" class="col-sm-2 control-label">勋章最高等级</label>
               <div class="col-sm-8">
-                <input type="text" class="form-control" id="highestLevel" value="{{detailCtrl.mail.highestLevel}}">
+                <input type="text" class="form-control" id="highestLevel" ng-model="detailCtrl.mail.highestLevel">
               </div>
             </div> 
             <div class="form-group">
               <label for="ruleIntro" class="col-sm-2 control-label">勋章优先级</label>
               <div class="col-sm-8">
-                <input type="text" class="form-control" id="priorityNum" value="{{detailCtrl.mail.priorityNum}}">
+                <input type="text" class="form-control" id="priorityNum" ng-model="detailCtrl.mail.priorityNum">
               </div>
             </div> 
 <!--             <div class="form-group">
@@ -111,7 +112,7 @@
             </div> -->
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-warning" ui-sref="management.medalOperationList.list">保存</button>
+                <button type="submit" class="btn btn-warning" ng-click="detailCtrl.submit()">保存</button>
               </div>
             </div>
           </form>

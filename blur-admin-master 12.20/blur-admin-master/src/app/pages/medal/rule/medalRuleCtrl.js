@@ -13,9 +13,10 @@
 
         var vm = this;
 
-        $http.get('/admin/getMedalRule').success(function (res)
+        $http.get('/admin/getmedalrule').success(function (res)
         {
-           vm.ruleIntro = res.body.ruleInfo;
+            //console.log(res);
+            vm.ruleIntro = res.body.ruleInfo;
            });
 
   }

@@ -13,9 +13,10 @@
 
         var vm = this;
 
-        $http.get('app/pages/accumulation/accumulationRule/accumulationRule.json').success(function (res)
+        $http.get('/admin/getCreditRule').success(function (res)
         {
-           vm.ruleIntro = res[0];
+            console.log(res);
+            vm.ruleIntro = res.body.ruleInfo;
            });
 
   }

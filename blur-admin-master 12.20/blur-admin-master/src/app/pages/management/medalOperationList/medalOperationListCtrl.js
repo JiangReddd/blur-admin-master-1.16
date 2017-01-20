@@ -39,6 +39,7 @@
 
         vm.smartTablePageSize = 10;
 
+        //getJson('/admin/getMedalAll', 'smartTableData').then(function ()
         getJson('app/pages/management/medalOperationList/medalOperationList.json', 'smartTableData').then(function ()
         {
            }

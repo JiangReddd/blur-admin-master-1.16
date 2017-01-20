@@ -1,12 +1,17 @@
-[
-      {
+{
+  "body":
+      [{
         "id": "1",
-        "creditItem": "笔杆子",
-        "isEnable": "1"
+        "creditItemName": "笔杆子",
+        "isEnable": "1",
+        "updateTime":"1403058804",
+        "createTime":"1403058804"
       },
       {
         "id": "2",
-        "creditItem": "金手指",
-        "isEnable": "0"
-      }
-    ]
+        "creditItemName": "金手指",
+        "isEnable": "0",
+        "updateTime":"1403058804",
+        "createTime":"1403058804"
+      }]
+    }

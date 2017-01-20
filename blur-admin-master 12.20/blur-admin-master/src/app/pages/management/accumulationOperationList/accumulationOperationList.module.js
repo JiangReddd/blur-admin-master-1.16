@@ -28,11 +28,13 @@
         }).state('management.accumulationOperationList.add', {
           url: '/add',
           templateUrl: 'app/pages/management/accumulationOperationList/accumulationOperationListAdd.html',
+          controller:'accumulationOperationListAddCtrl',
+          controllerAs:'addCtrl',
           title: '积分信息新增',
         }).state('management.accumulationOperationList.modify', {
           url: '/modify/:id',
           templateUrl: 'app/pages/management/accumulationOperationList/accumulationOperationListModify.html',
-          controller:'accumulationOperationListDetailCtrl',
+          controller:'accumulationOperationListModifyCtrl',
           controllerAs:'detailCtrl',
           title: '积分信息修改',
         });

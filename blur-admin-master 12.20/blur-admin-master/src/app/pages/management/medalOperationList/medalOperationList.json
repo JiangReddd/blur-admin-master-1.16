@@ -1,6 +1,6 @@
 [
       {
-        "id": "1",
+        "medalId": "1",
         "medalName": "笔杆子",
         "medalEnName": "biganzi",
         "medalInfo": "@mdo",
@@ -12,7 +12,7 @@
         "isEnable": "1"
       },
       {
-        "id": "2",
+        "medalId": "2",
         "medalName": "金手指",
         "medalEnName": "jinshouzhi",
         "medalInfo": "@fat",
@@ -24,7 +24,7 @@
         "isEnable": "0"
       },
       {
-        "id": "3",
+        "medalId": "3",
         "medalName": "铁算盘",
         "medalEnName": "tiesuanpan",
         "medalInfo": "@fat",

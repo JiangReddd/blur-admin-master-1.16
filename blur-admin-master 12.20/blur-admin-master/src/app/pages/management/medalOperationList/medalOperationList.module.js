@@ -29,12 +29,20 @@
           url: '/add',
           templateUrl: 'app/pages/management/medalOperationList/medalOperationListAdd.html',
           title: '勋章信息新增',
+          controller:'medalOperationListAddCtrl',
+          controllerAs:'addCtrl'
         }).state('management.medalOperationList.modify', {
-          url: '/modify/:id',
+          url: '/modify/:medalId',
           templateUrl: 'app/pages/management/medalOperationList/medalOperationListModify.html',
-          controller:'medalOperationListDetailCtrl',
+          controller:'medalOperationListModifyCtrl',
           controllerAs:'detailCtrl',
           title: '勋章信息修改',
+        }).state('management.medalOperationList.upload', {
+          url: '/upload/:medalId',
+          templateUrl: 'app/pages/management/medalOperationList/medalOperationListUpload.html',
+          controller:'medalOperationListUploadCtrl',
+          controllerAs:'uploadCtrl',
+          title: '勋章图片上传',
         });
     $urlRouterProvider.when('/management/medalOperationList','/management/medalOperationList/list');
   }

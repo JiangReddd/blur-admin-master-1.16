@@ -11,7 +11,6 @@
               <th>勋章名称</th>
               <th>勋章类型</th>
               <th>介绍</th>
-              <th>优先级</th>
               <th>是否启用</th>
               <th>操作</th>
             </tr>
@@ -23,8 +22,6 @@
                          type="search"/></th>
               <th><input ng-model="search.medalInfo" placeholder="Search medalInfo" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input ng-model="search.priorityNum" placeholder="Search Priority" class="input-sm form-control search-input" type="search"/>
-              </th>
               <th><input ng-model="search.isEnable" placeholder="Search Available" class="input-sm form-control search-input" type="search"/>
               </th>
               <th><a ui-sref="management.medalOperationList.add">新增</a></th>
@@ -32,19 +29,18 @@
             </thead>
             <tbody>
             <tr ng-repeat="item in OperationListCtrl.smartTableData | filter:search:strict">
-              <td class="table-id">{{item.id}}</td>
+              <td class="table-id">{{item.medalId}}</td>
               <td>{{item.medalName}}</td>
               <td>{{item.medalType}}</td>
               <td>{{item.medalInfo}}</td>
-              <td>{{item.priorityNum}}</td>
               <td>{{item.isEnable}}</td>
-              <td><a ui-sref="management.medalOperationList.modify({id: item.id})">修改</a></td>
+              <td><a ui-sref="management.medalOperationList.modify({medalId: item.medalId})">修改</a></td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-              <td colspan="7" class="text-center">
-                <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
+              <td colspan="6" class="text-center">
+                <!-- <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div> -->
               </td>
             </tr>
             </tfoot>

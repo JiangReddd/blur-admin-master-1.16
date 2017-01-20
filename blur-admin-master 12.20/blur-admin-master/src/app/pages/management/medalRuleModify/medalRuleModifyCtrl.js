@@ -26,24 +26,21 @@
               console.log(vm.rule.ruleId);
               console.log(vm.rule.ruleInfo);
               //vm.newRule = JSON.stringify(vm.rule);
-              var data = new FormData();
-              data.append("ruleId",vm.rule.ruleId);
-              data.append("ruleInfo",vm.rule.ruleInfo);
+              var data={};
+              data.ruleId = vm.rule.ruleId;
+              data.ruleInfo = vm.rule.ruleInfo;
+              var url = '/admin/setMedalRule';
               console.log(data);
-              $http({
-                  url:'/admin/setMedalRule',
-                  method: 'POST', 
-                  headers:{'Content-Type':undefined},
-                  data: data 
-                }).success(function(){
-                                        console.log("success!");
-                                        console.log(vm.newRule);
-                                      })
-                  .error(function(){
-                                      //console.log(data);
-                                      console.log("error");
-                                      //console.log(data);
-                                   })
+              console.log(url);
+              $http.post(url,data)
+                .success(function(response){
+                          //上传成功的操作
+                          console.log("success");
+                })
+                .error(function(){
+                          //console.log(data);
+                          console.log("error");
+                               });
           }
 
 

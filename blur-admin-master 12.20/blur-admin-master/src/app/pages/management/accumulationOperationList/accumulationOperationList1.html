@@ -10,13 +10,19 @@
               <th class="table-id">#</th>
               <th>积分名称</th>
               <th>是否启用</th>
+              <th>创建日期</th>
+              <th>更新日期</th>
               <th>操作</th>
             </tr>
             <tr>
               <th></th>
-              <th><input ng-model="search.creditItem" placeholder="Search creditItem" class="input-sm form-control search-input"
+              <th><input ng-model="search.creditItemName" placeholder="Search creditItemName" class="input-sm form-control search-input"
                          type="search"/></th>
               <th><input ng-model="search.isEnable" placeholder="Search isEnable" class="input-sm form-control search-input" type="search"/>
+              </th>
+              <th><input ng-model="search.createTime" placeholder="Search createTime" class="input-sm form-control search-input" type="search"/>
+              </th>
+              <th><input ng-model="search.updateTime" placeholder="Search updateTime" class="input-sm form-control search-input" type="search"/>
               </th>
               <th><a ui-sref="management.accumulationOperationList.add">新增</a></th>
             </tr>
@@ -24,15 +30,17 @@
             <tbody>
             <tr ng-repeat="item in OperationListCtrl.smartTableData | filter:search:strict">
               <td class="table-id">{{item.id}}</td>
-              <td>{{item.creditItem}}</td>
+              <td>{{item.creditItemName}}</td>
               <td>{{item.isEnable}}</td>
+              <td>{{item.createTime}}</td>
+              <td>{{item.updateTime}}</td>
               <td><a ui-sref="management.accumulationOperationList.modify({id: item.id})">修改</a></td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
               <td colspan="7" class="text-center">
-                <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
+                <div></div>
               </td>
             </tr>
             </tfoot>
