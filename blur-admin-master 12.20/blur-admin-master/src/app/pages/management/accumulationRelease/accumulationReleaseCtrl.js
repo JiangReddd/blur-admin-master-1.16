@@ -19,9 +19,9 @@
                   $http.get(url)
                   .success(function (d)
                   {
-                      console.log(d);
+                      console.log(d.body);
 
-                      vm[target] = d;
+                      vm[target] = d.body;
 
                       deferred.resolve();
                   }
@@ -30,6 +30,7 @@
                   return deferred.promise;
               }
 
+        //getJson('/admin/getCreditById', 'smartTableData').then(function ()
         getJson('app/pages/management/accumulationRelease/accumulationRelease.json', 'smartTableData').then(function ()
         {
 
