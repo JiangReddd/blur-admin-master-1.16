@@ -19,16 +19,26 @@
             $http.get(url)
             .success(function (d)
             {
-                console.log(d);
-                $.each(d,function(i){
-                        if(d[i].isEnable == "1"){
-                          d[i].isEnable = "启用";
+                var dbody = d.body;
+                console.log(dbody);
+                $.each(dbody,function(i){
+                        if(dbody[i].isEnable == "1"){
+                          dbody[i].isEnable = "启用";
                         }
-                        if(d[i].isEnable == "0"){
-                          d[i].isEnable = "停用";
+                        if(dbody[i].isEnable == "0"){
+                          dbody[i].isEnable = "停用";
+                        }
+                        if(dbody[i].medalType == "1"){
+                          dbody[i].medalType = "常规";
+                        }
+                        if(dbody[i].medalType == "2"){
+                          dbody[i].medalType = "年度勋章";
+                        }
+                        if(dbody[i].medalType == "3"){
+                          dbody[i].medalType = "职业生涯";
                         }
                     });
-                vm[target] = d;
+                vm[target] = dbody;
 
                 deferred.resolve();
             }
@@ -39,8 +49,8 @@
 
         vm.smartTablePageSize = 10;
 
-        //getJson('/admin/getMedalAll', 'smartTableData').then(function ()
-        getJson('app/pages/management/medalOperationList/medalOperationList.json', 'smartTableData').then(function ()
+        getJson('/admin/getMedalAll', 'smartTableData').then(function ()
+        //getJson('app/pages/management/medalOperationList/medalOperationList.json', 'smartTableData').then(function ()
         {
            }
         );

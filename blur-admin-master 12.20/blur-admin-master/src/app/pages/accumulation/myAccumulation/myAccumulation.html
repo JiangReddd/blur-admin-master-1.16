@@ -1,5 +1,5 @@
 <uib-tabset active="$tabSetStatus.activeTab">
-  <uib-tab heading="2017" ng-click="accumulationCtrl.year(2017)">
+  <uib-tab heading="{{x}}" ng-click="accumulationCtrl.year({{x}})"  ng-repeat="x in accumulationCtrl.records">
     <div class="widgets">
 
       <div class="row">
@@ -39,111 +39,7 @@
                 <tfoot>
                 <tr>
                   <td colspan="6" class="text-center">
-                    <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
-                  </td>
-                </tr>
-                </tfoot>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </uib-tab>
-  <uib-tab heading="2018" ng-click="accumulationCtrl.year({{accumulationCtrl.test1}})">
-    <div class="widgets">
-      <div class="row">
-        <div class="col-md-12">
-          <div ba-panel ba-panel-title="积分列表" ba-panel-class="with-scroll">
-            <div class="horizontal-scroll">
-              <table class="table">
-                <thead>
-                <tr class="sortable ">
-                  <th class="table-id">#</th>
-                  <th>用户名</th>
-                  <th>积分条目</th>
-                  <th>积分分值</th>
-                  <th>获得时间</th>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th><input ng-model="search.userName" placeholder="Search userName" class="input-sm form-control search-input"
-                             type="search"/></th>
-                  <th><input ng-model="search.creditItem" placeholder="Search creditItem" class="input-sm form-control search-input"
-                             type="search"/></th>
-                  <th><input ng-model="search.creditScore" placeholder="Search creditScore" class="input-sm form-control search-input"
-                             type="search"/></th>
-                  <th><input ng-model="search.updateTime" placeholder="Search updateTime" class="input-sm form-control search-input" type="search"/>
-                  </th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr  ng-repeat="item in accumulationCtrl.accumulationData2 | filter:search:strict">
-                  <td class="table-id">{{item.id}}</td>
-                  <td>{{item.userName}}</td>
-                  <td>{{item.creditItem}}</td>
-                  <td>{{item.creditScore}}</td>
-                  <td>{{item.updateTime}}</td>
-                </tr>
-                </tbody>
-                <tfoot>
-                <tr>
-                  <td colspan="6" class="text-center">
-                    <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
-                  </td>
-                </tr>
-                </tfoot>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </uib-tab>
-  <uib-tab heading="2019" ng-click="accumulationCtrl.year(2019)">
-    <div class="widgets">
-      <div class="row">
-        <div class="col-md-12">
-          <div ba-panel ba-panel-title="积分列表" ba-panel-class="with-scroll">
-            <div class="horizontal-scroll">
-              <table class="table">
-                <thead>
-                <tr class="sortable ">
-                  <th class="table-id">#</th>
-                  <th>用户名</th>
-                  <th>积分条目</th>
-                  <th>积分分值</th>
-                  <th>获得时间</th>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th><input ng-model="search.userName" placeholder="Search userName" class="input-sm form-control search-input"
-                             type="search"/></th>
-                  <th><input ng-model="search.creditItem" placeholder="Search creditItem" class="input-sm form-control search-input"
-                             type="search"/></th>
-                  <th><input ng-model="search.creditScore" placeholder="Search creditScore" class="input-sm form-control search-input"
-                             type="search"/></th>
-                  <th><input ng-model="search.updateTime" placeholder="Search updateTime" class="input-sm form-control search-input" type="search"/>
-                  </th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr  ng-repeat="item in accumulationCtrl.accumulationData2 | filter:search:strict">
-                  <td class="table-id">{{item.id}}</td>
-                  <td>{{item.userName}}</td>
-                  <td>{{item.creditItem}}</td>
-                  <td>{{item.creditScore}}</td>
-                  <td>{{item.updateTime}}</td>
-                </tr>
-                </tbody>
-                <tfoot>
-                <tr>
-                  <td colspan="6" class="text-center">
-                    <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
+                    <div></div>
                   </td>
                 </tr>
                 </tfoot>

@@ -12,7 +12,6 @@
   function accumulationOperationListCtrl($http, $q, $filter, editableOptions, editableThemes) {
 
         var vm = this;
-
         function getJson(url, target)
         {
             var deferred = $q.defer();

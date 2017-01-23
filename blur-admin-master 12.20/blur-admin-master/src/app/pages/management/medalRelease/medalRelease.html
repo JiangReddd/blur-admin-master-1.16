@@ -11,8 +11,9 @@
               <th >用户名</th>
               <th >勋章名称</th>
               <th >勋章类型</th>
-              <th >发放人</th>
-              <th >发放时间</th>
+              <th >组别名称</th>
+              <th >上传时间</th>
+              <th >操作</th>
             </tr>
             <tr>
               <th></th>
@@ -22,27 +23,29 @@
                          type="search"/></th>
               <th><input ng-model="search.medalType" placeholder="" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input ng-model="search.releaseUser" placeholder="" class="input-sm form-control search-input" type="search"/>
+              <th><input ng-model="search.groupName" placeholder="" class="input-sm form-control search-input" type="search"/>
               </th>
-              <th><input ng-model="search.releaseTime" placeholder="" class="input-sm form-control search-input" type="search"/>
+              <th><input ng-model="search.updateTime" placeholder="" class="input-sm form-control search-input" type="search"/>
               </th>
+              <th></th>
             </tr>
             </thead>
             <tbody>
 <!--             <p>smartTableData:{{releaseCtrl.smartTableData}}</p> -->
             <tr ng-repeat="item in releaseCtrl.smartTableData | filter:search:strict">
-              <td class="table-id">{{item.id}}</td>
+              <td class="table-id">{{item.medalRecordId}}</td>
               <td>{{item.userName}}</td>
               <td>{{item.medalName}}</td>
               <td>{{item.medalType}}</td>
-              <td>{{item.releaseUser}}</td>
-              <td>{{item.releaseTime}}</td>
+              <td>{{item.groupName}}</td>
+              <td>{{item.updateTime}}</td>
+              <td><a ui-sref="management.medalRelease.detail({medalRecordId: item.medalRecordId})">详情</a></td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-              <td colspan="6" class="text-center">
-                <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
+              <td colspan="7" class="text-center">
+                <div></div>
               </td>
             </tr>
             </tfoot>
