@@ -8,8 +8,9 @@
             <thead>
             <tr class="sortable ">
               <th class="table-id">#</th>
-              <th>用户id</th>
+              <th>积分记录id</th>
               <th>用户名</th>
+              <th>班组</th>
               <th>积分条目</th>
               <th>积分分数</th>
               <th>上传者</th>
@@ -17,34 +18,37 @@
             </tr>
             <tr>
               <th></th>
-              <th><input ng-model="search.userId"  placeholder="Search userId" class="input-sm form-control search-input"
+              <th><input ng-model="search.creditRecordId"  placeholder="Search userId" class="input-sm form-control search-input"
                          type="search"/></th>
               <th><input ng-model="search.userName" placeholder="Search Last Name" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input ng-model="search.creditItem" placeholder="Search creditItem" class="input-sm form-control search-input"
+              <th><input ng-model="search.groupName" placeholder="Search Last Name" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input ng-model="search.creditScore" placeholder="Search creditScore" class="input-sm form-control search-input"
+              <th><input ng-model="search.creditItemName" placeholder="Search creditItem" class="input-sm form-control search-input"
+                         type="search"/></th>
+              <th><input ng-model="search.credit" placeholder="Search creditScore" class="input-sm form-control search-input"
                          type="search"/></th>
               <th><input ng-model="search.updateUser" placeholder="Search updateUser" class="input-sm form-control search-input" type="search"/>
               </th>
-              <th><input ng-model="search.month" placeholder="Search month" class="input-sm form-control search-input" type="search"/>
+              <th><input ng-model="search.updateTime" placeholder="Search month" class="input-sm form-control search-input" type="search"/>
               </th>
             </tr>
             </thead>
             <tbody>
             <tr  ng-repeat="item in releaseCtrl.smartTableData | filter:search:strict">
-              <td class="table-id">{{item.id}}</td>
-              <td>{{item.userId}}</td>
+              <td class="table-id">{{$index+1}}</td>
+              <td>{{item.creditRecordId}}</td>
               <td>{{item.userName}}</td>
-              <td>{{item.creditItem}}</td>
-              <td>{{item.creditScore}}</td>
+              <td>{{item.groupName}}</td>
+              <td>{{item.creditItemName}}</td>
+              <td>{{item.credit}}</td>
               <td>{{item.updateUser}}</td>
-              <td>{{item.month}}</td>
+              <td>{{item.updateTime}}</td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-              <td colspan="7" class="text-center">
+              <td colspan="8" class="text-center">
                 <div></div>
               </td>
             </tr>

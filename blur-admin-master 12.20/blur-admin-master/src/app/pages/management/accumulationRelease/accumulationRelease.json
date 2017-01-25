@@ -1,543 +1,543 @@
 {"body":[
       {
-        "id": 1,
+        "creditRecordId": 1,
         "userName": "Mark",
-        "userId": "@mdo",
-        "creditItem": "加班积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "张三",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 2,
+        "creditRecordId": 2,
         "userName": "Jacob",
-        "userId": "@fat",
-        "creditItem": "加班积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 3,
+        "creditRecordId": 3,
         "userName": "Larry",
-        "userId": "@twitter",
-        "creditItem": "加班积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 4,
+        "creditRecordId": 4,
         "userName": "John",
-        "userId": "@snow",
-        "creditItem": "假日加班积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 5,
+        "creditRecordId": 5,
         "userName": "Jack",
-        "userId": "@jack",
-        "creditItem": "加班积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 6,
+        "creditRecordId": 6,
         "userName": "Ann",
-        "userId": "@ann",
-        "creditItem": "加班积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 7,
+        "creditRecordId": 7,
         "userName": "Barbara",
-        "userId": "@barbara",
-        "creditItem": "奖励积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 8,
+        "creditRecordId": 8,
         "userName": "Sevan",
-        "userId": "@sevan",
-        "creditItem": "奖励积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 9,
+        "creditRecordId": 9,
         "userName": "Ruben",
-        "userId": "@ruben",
-        "creditItem": "奖励积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 10,
+        "creditRecordId": 10,
         "userName": "Karen",
-        "userId": "@karen",
-        "creditItem": "奖励积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 11,
+        "creditRecordId": 11,
         "userName": "Mark",
-        "userId": "@mark",
-        "creditItem": "奖励积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 12,
+        "creditRecordId": 12,
         "userName": "Jacob",
-        "userId": "@jacob",
-        "creditItem": "奖励积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 13,
+        "creditRecordId": 13,
         "userName": "Haik",
-        "userId": "@haik",
-        "creditItem": "奖励积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 14,
+        "creditRecordId": 14,
         "userName": "Garegin",
-        "userId": "@garegin",
-        "creditItem": "奖励积分m",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 15,
+        "creditRecordId": 15,
         "userName": "Krikor",
-        "userId": "@krikor",
-        "creditItem": "奖励积分",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": "黄伟文",
-        "creditScore": "5" ,
-        "month": "2016.11"
+        "credit": "5" ,
+        "updateTime": "2016.11"
       },
       {
-        "id": 16,
+        "creditRecordId": 16,
         "userName": "Francisca",
-        "userId": "@Gibson",
-        "creditItem": "franciscagibson@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 11 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 17,
+        "creditRecordId": 17,
         "userName": "Tillman",
-        "userId": "@Snow",
-        "creditItem": "tillmansnow@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 34 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 18,
+        "creditRecordId": 18,
         "userName": "Jimenez",
-        "userId": "@Bryant",
-        "creditItem": "jimenezbryant@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 45 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 19,
+        "creditRecordId": 19,
         "userName": "Sandoval",
-        "userId": "@Mcbride",
-        "creditItem": "sandovalmcbride@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 32 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 20,
+        "creditRecordId": 20,
         "userName": "Griffin",
-        "userId": "@Charles",
-        "creditItem": "griffincharles@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 19 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 21,
+        "creditRecordId": 21,
         "userName": "Cora",
-        "userId": "@Caldwell",
-        "creditItem": "coracaldwell@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 27 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 22,
+        "creditRecordId": 22,
         "userName": "Cindy",
-        "userId": "@Velez",
-        "creditItem": "cindyvelez@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 24 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 23,
+        "creditRecordId": 23,
         "userName": "Frieda",
-        "userId": "@Craig",
-        "creditItem": "friedacraig@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 45 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 24,
+        "creditRecordId": 24,
         "userName": "Cote",
-        "userId": "@Rowe",
-        "creditItem": "coterowe@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 20 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 25,
+        "creditRecordId": 25,
         "userName": "Trujillo",
-        "userId": "@Valenzuela",
-        "creditItem": "trujillovalenzuela@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 16 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 26,
+        "creditRecordId": 26,
         "userName": "Pruitt",
-        "userId": "@Sloan",
-        "creditItem": "pruittsloan@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 44 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 27,
+        "creditRecordId": 27,
         "userName": "Sutton",
-        "userId": "@Black",
-        "creditItem": "suttonblack@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 42 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 28,
+        "creditRecordId": 28,
         "userName": "Marion",
-        "userId": "@Espinoza",
-        "creditItem": "marionespinoza@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 47 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 29,
+        "creditRecordId": 29,
         "userName": "Newman",
-        "userId": "@Keith",
-        "creditItem": "newmankeith@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 15 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 30,
+        "creditRecordId": 30,
         "userName": "Boyle",
-        "userId": "@Summers",
-        "creditItem": "boylesummers@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 32 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 31,
+        "creditRecordId": 31,
         "userName": "Haynes",
-        "userId": "@Mckenzie",
-        "creditItem": "haynesmckenzie@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 15 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 32,
+        "creditRecordId": 32,
         "userName": "Miller",
-        "userId": "@Young",
-        "creditItem": "milleryoung@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 55 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 33,
+        "creditRecordId": 33,
         "userName": "Johnston",
-        "userId": "@Knight",
-        "creditItem": "johnstonknight@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 29 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 34,
+        "creditRecordId": 34,
         "userName": "Lena",
-        "userId": "@Forbes",
-        "creditItem": "lenaforbes@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 25 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 35,
+        "creditRecordId": 35,
         "userName": "Terrie",
-        "userId": "@Branch",
-        "creditItem": "terriebranch@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 37 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 36,
+        "creditRecordId": 36,
         "userName": "Louise",
-        "userId": "@Kirby",
-        "creditItem": "louisekirby@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 44 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 37,
-        "userName": "David",
-        "userId": "@Sanders",
-        "creditItem": "davidsanders@comtours.com",
+        "creditRecordId": 37,
+        "userName": "DavcreditRecordId",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 26 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 38,
+        "creditRecordId": 38,
         "userName": "Holden",
-        "userId": "@Mckinney",
-        "creditItem": "holdenmckinney@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 11 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 39,
+        "creditRecordId": 39,
         "userName": "Baker",
-        "userId": "@Montoya",
-        "creditItem": "bakermontoya@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 47 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 40,
+        "creditRecordId": 40,
         "userName": "Belinda",
-        "userId": "@Calderon",
-        "creditItem": "belindacalderon@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 21 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 41,
+        "creditRecordId": 41,
         "userName": "Pearson",
-        "userId": "@Clements",
-        "creditItem": "pearsonclements@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 42 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 42,
+        "creditRecordId": 42,
         "userName": "Alyce",
-        "userId": "@Daugherty",
-        "creditItem": "alycedaugherty@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 55 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 43,
+        "creditRecordId": 43,
         "userName": "Valencia",
-        "userId": "@Olsen",
-        "creditItem": "valenciaolsen@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 20 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 44,
+        "creditRecordId": 44,
         "userName": "Leach",
-        "userId": "@Humphrey",
-        "creditItem": "leachhumphrey@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 28 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 45,
+        "creditRecordId": 45,
         "userName": "Moss",
-        "userId": "@Fitzpatrick",
-        "creditItem": "mossfitzpatrick@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 51 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 46,
+        "creditRecordId": 46,
         "userName": "Jeanne",
-        "userId": "@Ward",
-        "creditItem": "jeanneward@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 59 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 47,
+        "creditRecordId": 47,
         "userName": "Wilma",
-        "userId": "@Kidd",
-        "creditItem": "wilmakidd@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 53 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 48,
+        "creditRecordId": 48,
         "userName": "Beatrice",
-        "userId": "@Gilbert",
-        "creditItem": "beatricegilbert@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 39 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 49,
+        "creditRecordId": 49,
         "userName": "Whitaker",
-        "userId": "@Mcdonald",
-        "creditItem": "whitakermcdonald@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 35 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 50,
+        "creditRecordId": 50,
         "userName": "Rebekah",
-        "userId": "@Gross",
-        "creditItem": "rebekahgross@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 40 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 51,
+        "creditRecordId": 51,
         "userName": "Earline",
-        "userId": "@Woodward",
-        "creditItem": "earlinewoodward@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 52 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 52,
+        "creditRecordId": 52,
         "userName": "Moran",
-        "userId": "@Johns",
-        "creditItem": "moranjohns@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 20 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 53,
+        "creditRecordId": 53,
         "userName": "Nanette",
-        "userId": "@Cooke",
-        "creditItem": "nanettecooke@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 55 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 54,
+        "creditRecordId": 54,
         "userName": "Dalton",
-        "userId": "@Hendricks",
-        "creditItem": "daltonhendricks@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 25 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 55,
+        "creditRecordId": 55,
         "userName": "Bennett",
-        "userId": "@Pena",
-        "creditItem": "bennettpena@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 13 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 56,
+        "creditRecordId": 56,
         "userName": "Kellie",
-        "userId": "@Weiss",
-        "creditItem": "kellieweiss@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 48 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 57,
+        "creditRecordId": 57,
         "userName": "Hobbs",
-        "userId": "@Sanford",
-        "creditItem": "hobbssanford@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 28 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 58,
+        "creditRecordId": 58,
         "userName": "Mcguire",
-        "userId": "@Roman",
-        "creditItem": "mcguireroman@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 38 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 59,
+        "creditRecordId": 59,
         "userName": "Rodriquez",
-        "userId": "@Harper",
-        "creditItem": "rodriquezharper@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 20 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       },
       {
-        "id": 60,
+        "creditRecordId": 60,
         "userName": "Lou",
-        "userId": "@Sanchez",
-        "creditItem": "lousanchez@comtours.com",
+        "groupName": "国漫三组",
+        "creditItemName": "讲师",
         "updateUser": 16 ,
-        "creditScore": 5 ,
-        "month":"2016.11"
+        "credit": 5 ,
+        "updateTime":"2016.11"
       }
     ]
 }

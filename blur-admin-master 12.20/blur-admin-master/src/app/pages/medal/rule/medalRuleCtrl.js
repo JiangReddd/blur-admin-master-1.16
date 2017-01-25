@@ -13,7 +13,7 @@
 
         var vm = this;
 
-        $http.get('/admin/getmedalrule').success(function (res)
+        $http.get('/admin/getMedalRule').success(function (res)
         {
             //console.log(res);
             vm.ruleIntro = res.body.ruleInfo;
