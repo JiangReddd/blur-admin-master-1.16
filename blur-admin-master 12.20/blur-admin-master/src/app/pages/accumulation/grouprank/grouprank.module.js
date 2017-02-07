@@ -30,7 +30,7 @@
         }).state('accumulation.grouprank.label', {
           url: '/inbox',
           templateUrl: 'app/pages/accumulation/grouprank/groupPart/groupPart.html',
-          title: '综合排行榜 - 个人排行榜',
+          title: '班组排行榜 - 室班组排行榜',
           controller: "groupPartCtrl",
           controllerAs: "listCtrl",
         }).state('accumulation.grouprank.detail', {

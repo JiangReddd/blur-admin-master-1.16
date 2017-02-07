@@ -20,9 +20,16 @@
                   .success(function (d)
                   {
                       console.log(d.body);
+                      $.each(d.body,function(i){
+                        var newDate = new Date();
+                        var exchangecreateTime = d.body[i].createTime;
+                        d.body[i].createTime = newDate.toLocaleDateString(newDate.setTime(exchangecreateTime));
+                        console.log(d.body[i].createTime); 
+
+                      });
+                      console.log(d.body);
 
                       vm[target] = d.body;
-
                       deferred.resolve();
                   }
                   )

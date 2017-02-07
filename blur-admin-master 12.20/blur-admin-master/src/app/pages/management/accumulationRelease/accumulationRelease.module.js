@@ -26,6 +26,12 @@
           controller:'accumulationReleaseCtrl',
           controllerAs:'releaseCtrl',
           title: '积分发放记录',
+        }).state('management.accumulationRelease.detail', {
+          url: '/detail/:id',
+          templateUrl: 'app/pages/management/accumulationRelease/accumulationDetail.html',
+          controller:'accumulationDetailCtrl',
+          controllerAs:'detailCtrl',
+          title: '积分发放记录',
         });
     $urlRouterProvider.when('/management/accumulationRelease','/management/accumulationRelease/list');
   }

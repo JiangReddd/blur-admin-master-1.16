@@ -1,0 +1,97 @@
+<div class="message-container" ng-class="{'expanded': tabCtrl.navigationCollapsed}">
+  <div class="message">
+    <div class="row">
+      <div class="toggle-navigation-container detail-page">
+        <a href class="collapse-navigation-link ion-navicon"
+           ng-click="tabCtrl.navigationCollapsed=!tabCtrl.navigationCollapsed"></a>
+      </div>
+      <button ui-sref="management.accumulationRelease.list"  type="button" class="back-button btn btn-default btn-with-icon">
+        <i class="ion-chevron-left"></i>返回
+      </button>
+    </div>
+    <div class="person-info row">
+      <div
+          ba-panel
+          ba-panel-title="积分发放记录详细信息"
+          ba-panel-class="with-scroll">
+          <div class="typography-document-samples row-fluid">
+            <div class="col-xlg-6 col-lg-12  col-md-12 col-sm-12 col-xs-12 typography-widget accumulationRelease">
+              <div ba-panel ba-panel-class="with-scroll heading-widget">
+                <div class="section-block">
+                  <h3>
+                    <span class="col-xlg-4 col-lg-4  col-md-4 col-sm-4 col-xs-12">
+                      用户名
+                    </span>
+                    <span class="col-xlg-8 col-lg-8  col-md-8 col-sm-8 col-xs-12">
+                      {{detailCtrl.mail.userName}}
+                    </span>
+                  </h3>
+                </div>
+                <div class="section-block">
+                  <h3>
+                    <span class="col-xlg-4 col-lg-4  col-md-4 col-sm-4 col-xs-12">
+                      班组名
+                    </span>
+                    <span class="col-xlg-8 col-lg-8  col-md-8 col-sm-8 col-xs-12">
+                      {{detailCtrl.mail.groupName}}
+                    </span>
+                  </h3>
+                </div>
+                <div class="section-block">
+                  <h3>
+                    <span class="col-xlg-4 col-lg-4  col-md-4 col-sm-4 col-xs-12">
+                      科室名
+                    </span>
+                    <span class="col-xlg-8 col-lg-8  col-md-8 col-sm-8 col-xs-12">
+                      {{detailCtrl.mail.groupClassName}}
+                    </span>
+                  </h3>
+                </div>
+                <div class="section-block">
+                  <h3>
+                    <span class="col-xlg-4 col-lg-4  col-md-4 col-sm-4 col-xs-12">
+                      积分名称
+                    </span>
+                    <span class="col-xlg-8 col-lg-8  col-md-8 col-sm-8 col-xs-12">
+                      {{detailCtrl.mail.creditItemName}}
+                    </span>
+                  </h3>
+                </div>
+                <!-- <div class="section-block">
+                  <h3>
+                    <span class="col-xlg-4 col-lg-4  col-md-4 col-sm-4 col-xs-12">
+                      积分介绍
+                    </span>
+                    <span class="col-xlg-8 col-lg-8  col-md-8 col-sm-8 col-xs-12">
+                      {{detailCtrl.mail.medalInfo}}
+                    </span>
+                  </h3>
+                </div> -->
+                <div class="section-block">
+                  <h3>
+                    <span class="col-xlg-4 col-lg-4  col-md-4 col-sm-4 col-xs-12">
+                      积分分数
+                    </span>
+                    <span class="col-xlg-8 col-lg-8  col-md-8 col-sm-8 col-xs-12">
+                      {{detailCtrl.mail.credit}}
+                    </span>
+                  </h3>
+                </div>
+                <div class="section-block">
+                  <h3>
+                    <span class="col-xlg-4 col-lg-4  col-md-4 col-sm-4 col-xs-12">
+                      记录发放时间
+                    </span>
+                    <span class="col-xlg-8 col-lg-8  col-md-8 col-sm-8 col-xs-12">
+                      {{detailCtrl.mail.createTime}}
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+      </div>
+      
+  <div ng-show="!detailCtrl.mail">
+    <h5 ng-class="text-center">Nothing to show</h5>
+  </div>
+</div>
