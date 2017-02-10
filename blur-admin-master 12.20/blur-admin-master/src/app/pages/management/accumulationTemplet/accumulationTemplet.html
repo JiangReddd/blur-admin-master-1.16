@@ -10,7 +10,7 @@
           <div class="row">
             <section class="col-md-12 col-lg-6">
               <span class="button-title">模板下载</span>
-              <button progress-button="progressFunction()" pb-style="rotate-back" class="btn btn-success">下载</button>
+              <button progress-button="progressFunction()" pb-style="rotate-back" class="btn btn-success" ng-click="downloadFile()">下载</button>
             </section>
           </div>
         </div>
@@ -24,7 +24,7 @@
               <div class="row ng-scope">
               <div class="progress-buttons-container default-text">
                 <div class="row">
-                  <form ng-submit=""  method="post" enctype="multipart/form-data">
+                  <form method="POST" accept-charset="utf-8" enctype="multipart/form-data" ng-submit="uploadAccumulation()">
                     <section class="col-md-12 col-lg-6">
                       <span class="button-title">上传模板【带用户数据】</span>
                           <div class="uploader blue">
@@ -35,7 +35,7 @@
                     </section>
                     <section class="col-md-12 col-lg-6">
                       <span class="button-title">上传</span>
-                      <button type="submit" progress-button="progressFunction()" pb-style="rotate-back" class="btn btn-success">上传</button>
+                      <button type="submit" progress-button="progressFunction()" pb-style="rotate-back" class="btn btn-success" ng-click="uploadAccumulation()">上传</button>
                     </section>
                   </form>
                 </div>
