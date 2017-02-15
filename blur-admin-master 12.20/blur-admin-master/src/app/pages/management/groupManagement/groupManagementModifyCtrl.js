@@ -6,32 +6,66 @@
 	'use strict';
 
 	angular.module('BlurAdmin.pages.management.groupManagement')
-		.controller('groupManagementDetailCtrl', groupManagementDetailCtrl);
+		.controller('groupManagementModifyCtrl', groupManagementModifyCtrl);
 
 	/** @ngInject */
-	function groupManagementDetailCtrl($http,$stateParams) {
+	function groupManagementModifyCtrl($http,$stateParams,$location) {
 		var vm = this;
-		$http.get('app/pages/management/groupManagement/groupManagement.json').then(function(res) {
-			var messages = res.data.sort(function(a, b) {
-				if (a.id > b.id) return 1;
-				if (a.id < b.id) return -1;
+		//$http.get('app/pages/management/groupManagement/groupManagement.json').then(function(res) {
+		$http.get('/admin/getUserGroupAll').then(function(res) {
+			var messages = res.data.body.UserGroup.sort(function(a, b) {
+				if (a.groupId > b.groupId) return 1;
+				if (a.groupId < b.groupId) return -1;
 			}).reverse();
 			vm.mail = messages.filter(function(m) {
-				return m.id == $stateParams.id;
-			})[0];   
-			if(vm.mail.isEnable == "1"){
-				$("#isEnable").attr("checked",true);
-			}
-			if(vm.mail.isEnable == "0"){
-				$("#isEnable1").attr("checked",true);
-			}; 
-			if(vm.mail.growType == "1"){
-				$("#growType").attr("checked",true);
-			}
-			if(vm.mail.growType == "0"){
-				$("#growType1").attr("checked",true);
-			}; 
+				return m.groupId == $stateParams.groupId;
+			})[0]; 
+			vm.standardSelectItems = res.data.body.GroupClass; 
+			console.log(res.data.body.GroupClass);  
+			console.log(vm.mail.groupClassId); 
+			
+			/*$.each(vm.standardSelectItems,function(i){
+				if(vm.mail.groupClassId == vm.standardSelectItems[i].groupClassId){
+					//$(".selectpicker option:eq(1)").attr("selected",true);
+					//vm.standardSelected = "object:150";
+					//console.log(vm.mail.groupClassId);
+					//console.log(vm.standardSelectItems[i].groupClassName);
+					//vm.standardSelected = vm.standardSelectItems[i].groupClassName;
+					//console.log(vm.standardSelected);
+					//$(".selectpicker").val(vm.standardSelectItems[i].groupClassName);
+				} 
+			})*/
+			/*$http.get('app/pages/management/groupTypeManagement/groupTypeManagement.json').then(function(res) {
+				vm.standardSelectItems = [];
+					var messages = res.data.body.sort(function(a, b) {
+						if (a.groupClassId > b.groupClassId) return 1;
+						if (a.groupClassId < b.groupClassId) return -1;
+					}).reverse();
+					console.log(messages);
+					vm.standardSelectItems = messages; 
+				});*/
 		});
-		vm.label = $stateParams.label;
+
+		vm.update = function(){
+			var data = {};
+			data.groupId = vm.mail.groupId;
+			data.groupName = vm.mail.groupName;
+			data.groupClassId = vm.standardSelected.groupClassId;
+			console.log(data);
+			var url = '/admin/updateGroupClass';
+            $http.post(url,data)
+                .success(function(response){
+                        //上传成功的操作
+                        console.log("success");
+                        alert("班组类别修改成功");
+	                    $location.path("/management/groupManagement/list", {}, { reload: true });
+                })
+                .error(function(){
+                        //console.log(data);
+                        console.log("error");
+                        alert("班组类别修改失败");
+	                    $location.path("/management/groupManagement/modify/" + vm.mail.groupId, {}, { reload: true });
+                });
+		}
 	}
 })();

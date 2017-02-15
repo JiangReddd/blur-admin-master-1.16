@@ -1,38 +1,53 @@
-[
-      {
-        "id": "1",
-        "medalName": "笔杆子",
-        "medalEnName": "biganzi",
-        "medalInfo": "@mdo",
-        "medalType": "常规",
-        "growType" : "1",
-        "imageUrl" : "...",
-        "highestLevel" : "12",
-        "priorityNum": "100",
-        "isEnable": "1"
-      },
-      {
-        "id": "2",
-        "medalName": "金手指",
-        "medalEnName": "jinshouzhi",
-        "medalInfo": "@fat",
-        "medalType": "常规",
-        "growType" : "1",
-        "imageUrl" : "...",
-        "highestLevel" : "1",
-        "priorityNum": "111",
-        "isEnable": "0"
-      },
-      {
-        "id": "3",
-        "medalName": "铁算盘",
-        "medalEnName": "tiesuanpan",
-        "medalInfo": "@fat",
-        "medalType": "职业生涯",
-        "growType" : "0",
-        "imageUrl" : "...",
-        "highestLevel" : "1",
-        "priorityNum": "230",
-        "isEnable": "1"
-      }
-    ]
+{
+    "errcode":0,
+    "errmsg":"成功",
+    "body":
+    {"UserGroup":[
+        {
+            "groupId":102,
+            "groupName":"互联网三组",
+            "groupClassId":100001
+        },
+        {
+            "groupId":103,
+            "groupName":"国漫一组",
+            "groupClassId":100002
+        },
+        {
+            "groupId":106,
+            "groupName":"综援一组",
+            "groupClassId":100003
+        },
+        {
+            "groupId":107,
+            "groupName":"综援二组",
+            "groupClassId":100003
+        },
+        {
+            "groupId":108,
+            "groupName":"训练二组",
+            "groupClassId":100004
+        }],
+     "GroupClass":[
+        {
+        "groupClassId":100001,
+        "groupClassName":"互联网"
+        },
+        {
+        "groupClassId":100002,
+        "groupClassName":"国漫"
+        },
+        {
+        "groupClassId":100003,
+        "groupClassName":"综援"
+        },
+        {
+        "groupClassId":100004,
+        "groupClassName":"训练"
+        },
+        {
+        "groupClassId":100005,
+        "groupClassName":"训练2"
+        }]
+    }
+}

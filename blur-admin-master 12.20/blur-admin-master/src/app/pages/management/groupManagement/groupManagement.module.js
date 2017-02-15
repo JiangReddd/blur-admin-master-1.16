@@ -29,11 +29,13 @@
           url: '/add',
           templateUrl: 'app/pages/management/groupManagement/groupManagementAdd.html',
           title: '新增班组信息',
+          controller:'groupManagementAddCtrl',
+          controllerAs:'addCtrl'
         }).state('management.groupManagement.modify', {
-          url: '/modify/:id',
+          url: '/modify/:groupId',
           templateUrl: 'app/pages/management/groupManagement/groupManagementModify.html',
-          controller:'groupManagementDetailCtrl',
-          controllerAs:'detailCtrl',
+          controller:'groupManagementModifyCtrl',
+          controllerAs:'modifyCtrl',
           title: '修改班组信息',
         });
     $urlRouterProvider.when('/management/groupManagement','/management/groupManagement/list');

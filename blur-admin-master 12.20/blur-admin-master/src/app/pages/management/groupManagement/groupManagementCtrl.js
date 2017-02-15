@@ -18,18 +18,21 @@
             var deferred = $q.defer();
             $http.get(url)
             .success(function (d)
-            {
-                console.log(d);
-                $.each(d,function(i){
-                        if(d[i].isEnable == "1"){
-                          d[i].isEnable = "启用";
-                        }
-                        if(d[i].isEnable == "0"){
-                          d[i].isEnable = "停用";
-                        }
-                    });
-                vm[target] = d;
-
+            { 
+                var dbody = d.body.UserGroup;
+                //console.log(dbody);
+                //班组类别ID转换班组类别
+                $.each(dbody,function(i){
+                        var dClass = d.body.GroupClass;
+                        var dClassLength = d.body.GroupClass.length;
+                        $.each(dClass,function(n){
+                          if(dbody[i].groupClassId == dClass[n].groupClassId){
+                            dbody[i].groupTypeName = dClass[n].groupClassName;
+                          }
+                        })
+                    })
+                //console.log(dbody);
+                vm[target] = dbody;
                 deferred.resolve();
             }
             )
@@ -37,12 +40,12 @@
             return deferred.promise;
         }
 
-        vm.smartTablePageSize = 10;
 
-        getJson('app/pages/management/groupManagement/groupManagement.json', 'smartTableData').then(function ()
+        //getJson('app/pages/management/groupManagement/groupManagement.json', 'smartTableData').then(function ()
+        getJson('/admin/getUserGroupAll', 'smartTableData').then(function ()
         {
-           }
-        );
+
+           });
 
 
 

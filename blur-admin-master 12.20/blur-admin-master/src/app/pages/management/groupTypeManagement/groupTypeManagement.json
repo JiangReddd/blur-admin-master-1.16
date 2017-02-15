@@ -1,0 +1,23 @@
+{
+    "errcode":0,
+    "errmsg":"成功",
+    "body":
+        [
+        {
+            "groupClassId":100001,
+            "groupClassName":"互联网"
+            },
+        {
+            "groupClassId":100002,
+            "groupClassName":"国漫"
+            },
+        {
+            "groupClassId":100003,
+            "groupClassName":"综援"
+            },
+        {
+            "groupClassId":100004,
+            "groupClassName":"训练"
+            }
+        ]
+}

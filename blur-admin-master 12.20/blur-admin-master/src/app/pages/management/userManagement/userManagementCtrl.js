@@ -19,16 +19,17 @@
             $http.get(url)
             .success(function (d)
             {
-                console.log(d);
-                $.each(d,function(i){
-                        if(d[i].isInService == "1"){
-                          d[i].isInService = "在职";
+                var userInfo = d.body.userInfoAll;
+                console.log(userInfo);
+                $.each(userInfo,function(i){
+                        if(userInfo[i].isInService == "1"){
+                          userInfo[i].isInService = "在职";
                         }
-                        if(d[i].isInService == "0"){
-                          d[i].isInService = "离职";
+                        if(userInfo[i].isInService == "0"){
+                          userInfo[i].isInService = "离职";
                         }
                     });
-                vm[target] = d;
+                vm[target] = d.body.userInfoAll;
 
                 deferred.resolve();
             }
@@ -39,8 +40,10 @@
 
         vm.smartTablePageSize = 10;
 
-        getJson('app/pages/management/userManagement/userManagement.json', 'smartTableData').then(function ()
+        //getJson('app/pages/management/userManagement/userManagement.json', 'smartTableData').then(function ()
+        getJson('/admin/getUserInfoAll', 'smartTableData').then(function ()
         {
+
            }
         );
 

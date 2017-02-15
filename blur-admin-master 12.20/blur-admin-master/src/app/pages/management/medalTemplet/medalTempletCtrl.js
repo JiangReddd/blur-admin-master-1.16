@@ -11,7 +11,7 @@
   /** @ngInject */
   function medalTempletCtrl($scope, $timeout,$http,$window) {
   	$scope.uploadMedal = function(){
-  		var fd = new FormData();
+  		var data = new FormData();
         var file = document.querySelector('input[type=file]').files[0];
         //var file2 = $scope.myFile;
         console.log(file);

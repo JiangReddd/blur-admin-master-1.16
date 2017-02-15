@@ -25,7 +25,9 @@
 
       'BlurAdmin.pages.management.userManagement',
 
-      'BlurAdmin.pages.management.groupManagement'
+      'BlurAdmin.pages.management.groupManagement',
+
+      'BlurAdmin.pages.management.groupTypeManagement',
 
 
     ])

@@ -1,0 +1,45 @@
+<div class="widgets">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div ba-panel ba-panel-title="班组信息" ba-panel-class="with-scroll">
+        <div class="horizontal-scroll">
+          <table class="table">
+            <thead>
+            <tr class="sortable ">
+              <th class="table-id">#</th>
+              <th>班组类别名称</th>
+              <th>班组类别ID</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th><input ng-model="search.groupClassName" placeholder="Search groupClassName" class="input-sm form-control search-input"
+                         type="search"/></th>
+              <th><input ng-model="search.groupClassId" placeholder="Search groupClassId" class="input-sm form-control search-input"
+                         type="search"/></th>
+              <th><a ui-sref="management.groupTypeManagement.add">新增</a></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="item in managementCtrl.smartTableData | filter:search:strict">
+              <td class="table-id">{{$index+1}}</td>
+              <td>{{item.groupClassName}}</td>
+              <td>{{item.groupClassId}}</td>
+              <td><a ui-sref="management.groupTypeManagement.modify({groupClassId: item.groupClassId})">修改</a></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+              <td colspan="7" class="text-center">
+                <div></div>
+              </td>
+            </tr>
+            </tfoot>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

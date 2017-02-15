@@ -9,42 +9,29 @@
             <tr class="sortable ">
               <th class="table-id">#</th>
               <th>班组名称</th>
-              <th>勋章类型</th>
-              <th>介绍</th>
-              <th>优先级</th>
-              <th>是否启用</th>
-              <th>操作</th>
+              <th>班组类型</th>
             </tr>
             <tr>
               <th></th>
-              <th><input ng-model="search.medalName" placeholder="Search medalName" class="input-sm form-control search-input"
+              <th><input ng-model="search.groupName" placeholder="Search groupName" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input ng-model="search.medalType" placeholder="Search medalType" class="input-sm form-control search-input"
+              <th><input ng-model="search.GroupClass.groupTypeName" placeholder="Search groupTypeName" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input ng-model="search.medalInfo" placeholder="Search medalInfo" class="input-sm form-control search-input"
-                         type="search"/></th>
-              <th><input ng-model="search.priorityNum" placeholder="Search Priority" class="input-sm form-control search-input" type="search"/>
-              </th>
-              <th><input ng-model="search.isEnable" placeholder="Search Available" class="input-sm form-control search-input" type="search"/>
-              </th>
               <th><a ui-sref="management.groupManagement.add">新增</a></th>
             </tr>
             </thead>
             <tbody>
             <tr ng-repeat="item in managementCtrl.smartTableData | filter:search:strict">
-              <td class="table-id">{{item.id}}</td>
-              <td>{{item.medalName}}</td>
-              <td>{{item.medalType}}</td>
-              <td>{{item.medalInfo}}</td>
-              <td>{{item.priorityNum}}</td>
-              <td>{{item.isEnable}}</td>
-              <td><a ui-sref="management.groupManagement.modify({id: item.id})">修改</a></td>
+              <td class="table-id">{{item.groupId}}</td>
+              <td>{{item.groupName}}</td>
+              <td>{{item.groupTypeName}}</td>
+              <td><a ui-sref="management.groupManagement.modify({groupId: item.groupId})">修改</a></td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-              <td colspan="7" class="text-center">
-                <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
+              <td colspan="5" class="text-center">
+                <div></div>
               </td>
             </tr>
             </tfoot>

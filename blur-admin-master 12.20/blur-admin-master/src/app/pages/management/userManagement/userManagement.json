@@ -1,30 +1,55 @@
-[
-    {
-        "userId" : "123f",
-        "userName" : "李伟",
-        "workNumber" : "8888",
-        "takeOverNumber" : "112d",
-        "isInService" : "1",
-        "telephoneNumber" : "13812345678",
-        "picturePath" : "...",
-        "groupId" : "333d"
-    },{
-        "userId" : "123g",
-        "userName" : "张非",
-        "workNumber" : "8888",
-        "takeOverNumber" : "112d",
-        "isInService" : "1",
-        "telephoneNumber" : "13812345678",
-        "picturePath" : "...",
-        "groupId" : "333d"
-    },{
-        "userId" : "123h",
-        "userName" : "李伟而",
-        "workNumber" : "8888",
-        "takeOverNumber" : "112d",
-        "isInService" : "0",
-        "telephoneNumber" : "13812345678",
-        "picturePath" : "...",
-        "groupId" : "333d"
-    }
-    ]
+{
+"errcode":0,
+"errmsg":"成功",
+"body":{
+"userInfoAll":[
+{
+"userId":"yangying",
+"userName":"杨莹",
+"workNumber":"1234002",
+"takeOverNumber":"2",
+"isInService":1,
+"telephoneNumber":"13802880000",
+"picturePath":"abcdef",
+"groupId":107,
+"groupName":"综援二组",
+"groupClassId":100003,
+"groupClassName":"综援",
+"roleId":1,
+"roleName":"管理员",
+"password":"111111"
+},
+{
+"userId":"zouweizheng",
+"userName":"邹伟政",
+"workNumber":"1234003",
+"takeOverNumber":"3",
+"isInService":1,
+"telephoneNumber":"13802880000",
+"picturePath":"abcdef",
+"groupId":101,
+"groupName":"互联网二组",
+"groupClassId":100001,
+"groupClassName":"互联网",
+"roleId":3,
+"roleName":"超级管理员",
+"password":"111111"
+}],
+"userRole":[
+{
+"roleId":1,
+"roleName":"管理员",
+"roleList":"admin"
+},
+{
+"roleId":2,
+"roleName":"普通用户",
+"roleList":"user"
+},
+{
+"roleId":3,
+"roleName":"超级管理员",
+"roleList":"admin,user"
+}]
+}
+}

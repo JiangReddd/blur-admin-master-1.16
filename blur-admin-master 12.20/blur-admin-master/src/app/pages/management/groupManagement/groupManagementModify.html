@@ -16,108 +16,34 @@
           ba-panel-class="with-scroll">
           <form class="form-horizontal">
             <div class="form-group">
-              <label for="ruleTitle" class="col-sm-2 control-label">勋章名称</label>
+              <label for="ruleTitle" class="col-sm-2 control-label">班组名称</label>
               <div class="col-sm-8">
-                <input type="text" class="form-control" id="medalName" value="{{detailCtrl.mail.medalName}}">
+                <input type="text" class="form-control" id="groupName" ng-model="modifyCtrl.mail.groupName">
               </div>
             </div>
             <div class="form-group">
-              <label for="ruleTitle" class="col-sm-2 control-label">勋章拼音</label>
+              <label for="ruleIntro" class="col-sm-2 control-label">班组类型</label>
               <div class="col-sm-8">
-                <input type="text" class="form-control" id="medalEnName" value="{{detailCtrl.mail.medalEnName}}">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="ruleIntro" class="col-sm-2 control-label">勋章介绍</label>
-              <div class="col-sm-8">
-                <textarea class="form-control" value="规则介绍" id="medalInfo">{{detailCtrl.mail.medalInfo}}</textarea>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="ruleIntro" class="col-sm-2 control-label">勋章类型</label>
-              <div class="col-sm-8">
-                <div ng-controller="medalOperationListAddCtrl as selectpickerVm">
-                    <select class="form-control selectpicker" selectpicker title="请选择类型"
-                            ng-model="selectpickerVm.standardSelected"
-                            ng-options="item as item.label for item in selectpickerVm.standardSelectItems">
+                <div>
+                    <select class="form-control selectpicker" title="请选择类型"
+                            ng-model="modifyCtrl.standardSelected"
+                            ng-options="item as item.groupClassName for item in modifyCtrl.standardSelectItems">
                     </select>
                 </div>
               </div>
             </div>
-            <div class="form-group">
-              <label for="medalGrowType" class="col-sm-2 control-label">勋章成长类型</label>
-              <div class="input-demo radio-demo row">
-                <div class="col-md-4">
-                  <label class="radio-inline custom-radio nowrap">
-                    <input type="radio" name="inlineRadioOptions" id="growType" value="1">
-                    <span>可成长</span>
-                  </label>
-                </div>
-                <div class="col-md-4">
-                  <label class="radio-inline custom-radio nowrap">
-                    <input type="radio" name="inlineRadioOptions" id="growType1" value="0">
-                    <span>不可成长</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="form-group">
-              <label for="ruleIntro" class="col-sm-2 control-label">勋章图片</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="imageUrl" value="{{detailCtrl.mail.imageUrl}}">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="ruleIntro" class="col-sm-2 control-label">勋章最高等级</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="highestLevel" value="{{detailCtrl.mail.highestLevel}}">
-              </div>
-            </div> 
-            <div class="form-group">
-              <label for="ruleIntro" class="col-sm-2 control-label">勋章优先级</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="priorityNum" value="{{detailCtrl.mail.priorityNum}}">
-              </div>
-            </div> 
-<!--             <div class="form-group">
-              <label for="ruleIntro" class="col-sm-2 control-label">勋章上传人</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="UpdateUser" value="{{detailCtrl.mail.UpdateUser}}">
-              </div>
-            </div>   -->
-            <div class="form-group">
-              <label for="medalIsEnable" class="col-sm-2 control-label">勋章是否启用</label>
-              <div class="input-demo radio-demo row">
-                <div class="col-md-4">
-                  <label class="radio-inline custom-radio nowrap">
-                    <input type="radio" name="isEnable" id="isEnable" value="1">
-                    <span>启用</span>
-                  </label>
-                </div>
-                <div class="col-md-4">
-                  <label class="radio-inline custom-radio nowrap">
-                    <input type="radio" name="isEnable" id="isEnable1" value="0">
-                    <span>不启用</span>
-                  </label>
-                </div>
-              </div>
-            </div>
 <!--             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
-                <img ng-src="{{detailCtrl.mail.name.split(' ')[0] | profilePicture}}" class="human-picture">
+                <img ng-src="{{modifyCtrl.mail.name.split(' ')[0] | profilePicture}}" class="human-picture">
               </div>
             </div> -->
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-warning" ui-sref="management.medalOperationList.list">保存</button>
+                <button type="submit" class="btn btn-warning" ng-click="modifyCtrl.update()">保存</button>
               </div>
             </div>
           </form>
       </div>
       
-  <div ng-show="!detailCtrl.mail">
-    <h5 ng-class="text-center">Nothing to show</h5>
-  </div>
+
 </div>
