@@ -7,11 +7,17 @@
             <button type="button" class="btn btn-default compose-button" ng-click="">排行榜</button>
           </div>
 
-          <div ng-repeat="t in tabCtrl.tabs" ui-sref-active="active" class="mail-navigation"
+          <!-- <div ng-repeat="t in tabCtrl.tabs" ui-sref-active="active" class="mail-navigation"
                ui-sref="medal.rank.label({label: t.label})" ng-click="selectTab(t.label)">
             {{t.name}}
             <span class="new-mails" ng-show="t.newMails">{{t.newMails}}</span>
-          </div>
+          </div> -->
+          <a href="#/medal/rank/inbox" >
+            <div  ui-sref-active="active" class="mail-navigation">
+              个人榜单
+              <span class="new-mails" ng-show="t.newMails">3</span>
+            </div>
+          </a>
           <a href="#/medal/rank/rankMonth" >
             <div  ui-sref-active="active" class="mail-navigation">
               月榜单

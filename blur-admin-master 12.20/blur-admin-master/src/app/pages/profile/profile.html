@@ -26,21 +26,21 @@
           <label for="inputFirstName" class="col-sm-3 control-label">姓名</label>
 
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="inputFirstName" placeholder="" value="Anastasiya">
+            <label class="col-sm-3 control-label">{{profileCtrl.mail.userName}}</label>
           </div>
         </div>
         <div class="form-group row clearfix">
-          <label for="inputLastName" class="col-sm-3 control-label">工作地点</label>
+          <label for="inputLastName" class="col-sm-3 control-label">用户ID</label>
 
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="inputLastName" placeholder="" value="">
+            <label class="col-sm-3 control-label">{{profileCtrl.mail.userId}}</label>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+        <div class="col-md-6"><!-- 
         <div class="form-group row clearfix">
           <label class="col-sm-3 control-label">部门</label>
-
+      
           <div class="col-sm-9">
             <select class="form-control" selectpicker>
               <option>IT支撑中心</option>
@@ -49,60 +49,66 @@
               <option>合作交流中心</option>
             </select>
           </div>
-        </div>
-
-        <div class="form-group row clearfix">
-          <label for="inputOccupation" class="col-sm-3 control-label">职位</label>
-
-          <div class="col-sm-9">
-            <input type="text" class="form-control" id="inputOccupation" placeholder="" value="Front End Web Developer">
+        </div> -->
+          <div class="form-group row clearfix">
+              <label for="inputOccupation" class="col-sm-3 control-label">电话</label>
+              
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="telephoneNumber" ng-model="profileCtrl.mail.telephoneNumber">
+              </div>
+          </div>
+          <div class="form-group row clearfix">
+              <label for="inputOccupation" class="col-sm-3 control-label">角色权限</label>
+              
+              <div class="col-sm-9">
+                <label class="col-sm-3 control-label">{{profileCtrl.mail.roleName}}</label>
+              </div>
           </div>
         </div>
+        
       </div>
     </div>
 
-    <h3 class="with-line">修改密码</h3>
+    <h3 class="with-line">工作</h3>
 
     <div class="row">
       <div class="col-md-6">
         <div class="form-group row clearfix">
-          <label for="inputPassword" class="col-sm-3 control-label">密码</label>
+          <label for="inputEmail3" class="col-sm-3 control-label">工号</label>
 
           <div class="col-sm-9">
-            <input type="password" class="form-control" id="inputPassword" placeholder="" value="12345678">
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="form-group row clearfix">
-          <label for="inputConfirmPassword" class="col-sm-3 control-label">密码确认</label>
-
-          <div class="col-sm-9">
-            <input type="password" class="form-control" id="inputConfirmPassword" placeholder="">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <h3 class="with-line">联系方式</h3>
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="form-group row clearfix">
-          <label for="inputEmail3" class="col-sm-3 control-label">邮箱</label>
-
-          <div class="col-sm-9">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="" value="contact@akveo.com">
+            <label class="col-sm-3 control-label">{{profileCtrl.mail.workNumber}}</label>
           </div>
         </div>
         
       </div>
       <div class="col-md-6">
         <div class="form-group row clearfix">
-          <label for="inputPhone" class="col-sm-3 control-label">手机号码</label>
+          <label for="inputPhone" class="col-sm-3 control-label">接续工号</label>
 
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="inputPhone" placeholder="" value="+1 (23) 456 7890">
+            <label class="col-sm-3 control-label">{{profileCtrl.mail.takeOverNumber}}</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row clearfix">
+          <label for="inputEmail3" class="col-sm-3 control-label">在职状态</label>
+
+          <div class="col-sm-9">
+            <label class="col-sm-3 control-label">{{profileCtrl.mail.isInService}}</label>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row clearfix">
+          <label for="inputPhone" class="col-sm-3 control-label">班组</label>
+
+          <div class="col-sm-9">
+            <label class="col-sm-4 control-label">{{profileCtrl.mail.groupName}}</label>
           </div>
         </div>
       </div>
@@ -179,6 +185,9 @@
     </div> -->
     <button type="button" class="btn btn-primary btn-with-icon save-profile">
       <i class="ion-android-checkmark-circle"></i>确认更新
+    </button>
+    <button type="button" class="btn btn-primary btn-with-icon save-profile" ui-sref="profile.password">
+      <i class="ion-android-checkmark-circle"></i>修改密码
     </button>
   </div>
 </div>

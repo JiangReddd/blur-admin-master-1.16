@@ -1,89 +1,35 @@
-[{
-  "id": "4563faass",
-  "name": "Nasta Linnie",
-  "accumulationRank" : "1",
-  "accumulationScore" : "5",
-  "pic": "img/Nasta.png",
-  "email": "petraramsey@mail.com",
-  "position" : "初级客户管理"
-}, {
-  "id": "4563fdfvd",
-  "name": "Nasta Linnie",
-  "accumulationRank" : "1",
-  "accumulationScore" : "5",
-  "pic": "img/Nasta.png",
-  "email": "petraramsey@mail.com",
-  "position" : "初级客户管理"
-}, {
-  "id": "4563zxcss",
-  "name": "Nasta Linnie",
-  "accumulationRank" : "1",
-  "accumulationScore" : "5",
-  "pic": "img/Nasta.png",
-  "email": "petraramsey@mail.com",
-  "position" : "初级客户管理"
-}, {
-  "id": "8955sddf",
-  "name": "Nick Cat",
-  "accumulationRank" : "1",
-  "accumulationScore" : "5",
-  "pic": "img/Nick.png",
-  "email": "barlowshort@mail.com",
-  "position" : "初级客户管理"
-}, {
-  "id": "8955sdfcc",
-  "name": "Nick Cat",
-  "accumulationRank" : "1",
-  "accumulationScore" : "5",
-  "pic": "img/Nick.png",
-  "email": "barlowshort@mail.com",
-  "position" : "初级客户管理"
-}, {
-  "id": "8955asewf",
-  "name": "Nick Cat",
-  "accumulationRank" : "1",
-  "accumulationScore" : "5",
-  "pic": "img/Nick.png",
-  "email": "barlowshort@mail.com",
-  "position" : "初级客户管理"
-}, {
-  "id": "2334uudsa",
-  "name": "Kostya Danovsky",
-  "accumulationRank" : "1",
-  "accumulationScore" : "5",
-  "pic": "img/Kostya.png",
-  "email": "schwart@mail.com",
-  "position" : "初级客户管理"
-}, {
-  "id": "2334aefvv",
-  "name": "Kostya Danovsky",
-  "accumulationRank" : "1",
-  "accumulationScore" : "5",
-  "pic": "img/Kostya.png",
-  "email": "schwart@mail.com",
-  "position" : "初级客户管理"
-}, {
-  "id": "8223sdffn",
-  "name": "Andrey Hrabouski",
-  "accumulationRank" : "1",
-  "accumulationScore" : "5",
-  "pic": "img/Andrey.png",
-  "email": "lakeishaphillips@mail.com",
-  "position" : "初级客户管理"
-}, {
-  "id": "9391xdsff",
-  "name": "Vlad Lugovsky",
-  "accumulationRank" : "1",
-  "accumulationScore" : "5",
-  "pic": "img/Vlad.png",
-  "email": "carlsongoodman@mail.com",
-  "position" : "初级客户管理"
-}, {
-  "id": "8223xsdaa",
-  "name": "Andrey Hrabouski",
-  "accumulationRank" : "1",
-  "accumulationScore" : "5",
-  "pic": "img/Andrey.png",
-  "email": "lakeishaphillips@mail.com",
-  "position" : "初级客户管理"
-}]
+{
+  "errcode":0,
+  "errmsg":"成功",
+  "body":[
+  {
+    "groupId":107,
+    "groupName":"综援二组",
+    "groupClassId":100003,
+    "groupClassName":"综援",
+    "creditItemId":"Item003",
+    "creditItemName":"讲师",
+    "creditItemIsEnable":0,
+    "credit":5
+  },
+  {
+    "groupId":108,
+    "groupName":"综援三组",
+    "groupClassId":100003,
+    "groupClassName":"综援",
+    "creditItemId":"Item003",
+    "creditItemName":"讲师",
+    "creditItemIsEnable":0,
+    "credit":5
+  },
+  {
+    "groupId":109,
+    "groupName":"综援四组",
+    "groupClassId":100003,
+    "groupClassName":"综援",
+    "creditItemId":"Item003",
+    "creditItemName":"讲师",
+    "creditItemIsEnable":0,
+    "credit":7
+  }]
+}

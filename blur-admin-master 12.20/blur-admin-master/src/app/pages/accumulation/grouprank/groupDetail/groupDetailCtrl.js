@@ -12,14 +12,15 @@
 	function groupDetailCtrl($http,$stateParams) {
 		var vm = this;
 		$http.get('app/pages/accumulation/grouprank/grouprank.json').then(function(res) {
-			var messages = res.data.sort(function(a, b) {
-				if (a.date > b.date) return 1;
-				if (a.date < b.date) return -1;
+			var messages = res.data.body.sort(function(a, b) {
+				if (a.groupId > b.groupId) return 1;
+				if (a.groupId < b.groupId) return -1;
 			}).reverse();
 			vm.mail = messages.filter(function(m) {
-				return m.id == $stateParams.id;
+				return m.groupId == $stateParams.groupId;
 			})[0];   
+			console.log(vm.mail);
 		});
-		vm.label = $stateParams.label;
+		//vm.label = $stateParams.label;
 	}
 })();

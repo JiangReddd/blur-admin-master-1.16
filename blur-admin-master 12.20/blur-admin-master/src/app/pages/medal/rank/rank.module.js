@@ -24,7 +24,7 @@
         }).state('medal.rank.rankMonth', {
           url: '/rankMonth',
           template: '<rank-month></rank-month>',
-          title: '综合排行榜 - 月排0行榜',
+          title: '综合排行榜 - 月排行榜',
           controller: "rankMonthCtrl",
           controllerAs: "rankMonth"
         }).state('medal.rank.rankSingle', {
@@ -39,14 +39,14 @@
           title: '综合排行榜 - 年度单项榜',
           controller: "rankSingleYearCtrl",
           controllerAs: "rankSingleYear"
-        }).state('medal.rank.label', {
-          url: '/:label',
+        }).state('medal.rank.inbox', {
+          url: '/inbox',
           templateUrl: 'app/pages/medal/rank/list/rankList.html',
           title: '综合排行榜 - 个人排行榜',
           controller: "rankListCtrl",
           controllerAs: "listCtrl"
         }).state('medal.rank.detail', {
-          url: '/:label/:userId',
+          url: '/inbox/:userId',
           templateUrl: 'app/pages/medal/rank/detail/rankDetail.html',
           title: '综合排行榜 - 个人信息',
           controller: "rankDetailCtrl",

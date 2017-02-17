@@ -5,7 +5,7 @@
         <a href class="collapse-navigation-link ion-navicon"
            ng-click="tabCtrl.navigationCollapsed=!tabCtrl.navigationCollapsed"></a>
       </div>
-      <button ui-sref="medal.rank.label({label : detailCtrl.label})"  type="button" class="back-button btn btn-default btn-with-icon"><i
+      <button ui-sref="medal.rank.inbox"  type="button" class="back-button btn btn-default btn-with-icon"><i
           class="ion-chevron-left"></i>Back
       </button>
     </div>
@@ -14,9 +14,9 @@
         <img ng-src="{{detailCtrl.mail.name.split(' ')[0] | profilePicture}}" class="human-picture">
 
         <div class="name">
-          <h2 class="name-h">{{detailCtrl.mail.name.split(' ')[0]}}</h2>
+          <h2 class="name-h">{{detailCtrl.mail.userId}}</h2>
 
-          <h2 class="name-h second-name">{{detailCtrl.mail.name.split(' ')[1]}}</h2>
+          <h2 class="name-h second-name">邹伟政</h2>
 
           <div>
             <span class="mail-tag tag label {{detailCtrl.mail.tag}}">{{detailCtrl.mail.tag}}</span>
@@ -29,10 +29,10 @@
             <i class="ion-iphone"></i>
             <span class="phone">777-777-7777</span>
           </div>
-          <div>
+          <!-- <div>
             <i class="ion-email"></i>
             <span class="email">{{detailCtrl.mail.email}}</span>
-          </div>
+          </div> -->
         </div>
       </div>
 

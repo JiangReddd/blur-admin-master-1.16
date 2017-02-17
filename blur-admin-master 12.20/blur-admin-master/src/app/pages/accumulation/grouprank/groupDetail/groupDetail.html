@@ -5,18 +5,18 @@
         <a href class="collapse-navigation-link ion-navicon"
            ng-click="tabCtrl.navigationCollapsed=!tabCtrl.navigationCollapsed"></a>
       </div>
-      <button ui-sref="accumulation.grouprank.label({label : detailCtrl.label})"  type="button" class="back-button btn btn-default btn-with-icon"><i
+      <button ui-sref="accumulation.grouprank.groupPart"  type="button" class="back-button btn btn-default btn-with-icon"><i
           class="ion-chevron-left"></i>Back
       </button>
     </div>
     <div class="person-info row">
       <div class="col-lg-4 col-md-12  no-padding">
-        <img ng-src="{{detailCtrl.mail.name.split(' ')[0] | profilePicture}}" class="human-picture">
+        <!-- <img ng-src="{{detailCtrl.mail.name.split(' ')[0] | profilePicture}}" class="human-picture"> -->
 
         <div class="name">
-          <h2 class="name-h">{{detailCtrl.mail.name.split(' ')[0]}}</h2>
+          <!-- <h2 class="name-h">{{detailCtrl.mail.groupName}}</h2> -->
 
-          <h2 class="name-h second-name">{{detailCtrl.mail.name.split(' ')[1]}}</h2>
+          <h2 class="name-h second-name">{{detailCtrl.mail.groupName}}</h2>
 
           <div>
             <span class="mail-tag tag label work"><!-- {{detailCtrl.mail.tag}} --></span>
@@ -26,12 +26,8 @@
       <div class="col-lg-4 col-md-6 col-xs-12 no-padding">
         <div class="contact-info phone-email">
           <div>
-            <i class="ion-iphone"></i>
-            <span class="phone">777-777-7777</span>
-          </div>
-          <div>
-            <i class="ion-email"></i>
-            <span class="email">{{detailCtrl.mail.email}}</span>
+            <span class="address">班组类别：</span>
+            <span class="address">{{detailCtrl.mail.groupClassName}}</span>
           </div>
         </div>
       </div>
@@ -39,10 +35,8 @@
       <div class="col-lg-4 col-md-6 col-xs-12 no-padding">
         <div class="contact-info position-address">
           <div>
-            <span class="position">{{detailCtrl.mail.position}}</span>
-          </div>
-          <div>
-            <span class="address">客户服务中心</span>
+            <span class="address">班组：</span>
+            <span class="address">{{detailCtrl.mail.groupName}}</span>
           </div>
         </div>
       </div>
@@ -56,8 +50,9 @@
     </div>
     <div class="line"></div> -->
     <div class="message-details">
-      <span class="date">本月积分：{{detailCtrl.mail.accumulationScore}} </span>
-      <span class="date">本月排名：{{detailCtrl.mail.accumulationRank}} </span>
+      <p class="address">本月积分类目：{{detailCtrl.mail.creditItemName}} </p>
+      <p class="address">本月积分：{{detailCtrl.mail.credit}} </p>
+      <p class="address">本月排名：{{detailCtrl.mail.accumulationRank}} </p>
     </div>
     <div class="line"></div>
 </div>

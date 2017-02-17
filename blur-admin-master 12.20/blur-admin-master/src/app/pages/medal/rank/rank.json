@@ -1,124 +1,23 @@
-[{
-  "userId": "4563faass",
-  "name": "Nasta Linnie",
-  "professionMedalSummary" : "6",
-  "normalMedalSummary" : "3",
-  "sum" : "9",
-  "pic": "img/Nasta.png",
-  "email": "petraramsey@mail.com",
-  "position": "初级客户管理",
-  "tag": "friend",
-  "labels": ["inbox"]
-}, {
-  "userId": "4563fdfvd",
-  "name": "Nasta Linnie",
-  "professionMedalSummary" : "6",
-  "normalMedalSummary" : "3",
-  "sum" : "9",
-  "important": false,
-  "pic": "img/Nasta.png",
-  "email": "petraramsey@mail.com",
-  "position": "初级客户管理",
-  "tag": "study",
-  "labels": ["inbox"]
-}, {
-  "userId": "4563zxcss",
-  "name": "Nasta Linnie",
-  "professionMedalSummary" : "6",
-  "normalMedalSummary" : "3",
-  "sum" : "9",
-  "important": false,
-  "pic": "img/Nasta.png",
-  "email": "petraramsey@mail.com",
-  "position": "初级客户管理",
-  "tag": "work",
-  "labels": ["sent", "important"]
-}, {
-  "userId": "8955sddf",
-  "name": "Nick Cat",
-  "professionMedalSummary" : "6",
-  "normalMedalSummary" : "3",
-  "sum" : "9",
-  "pic": "img/Nick.png",
-  "email": "barlowshort@mail.com",
-  "position": "初级客户管理",
-  "tag": "work",
-  "labels": ["inbox"]
-}, {
-  "userId": "8955sdfcc",
-  "name": "Nick Cat",
-  "professionMedalSummary" : "6",
-  "normalMedalSummary" : "3",
-  "sum" : "9",
-  "pic": "img/Nick.png",
-  "email": "barlowshort@mail.com",
-  "position": "初级客户管理",
-  "tag": "study",
-  "labels": ["inbox"]
-}, {
-  "userId": "8955asewf",
-  "name": "Nick Cat",
-  "professionMedalSummary" : "6",
-  "normalMedalSummary" : "3",
-  "sum" : "9",
-  "pic": "img/Nick.png",
-  "email": "barlowshort@mail.com",
-  "position": "初级客户管理",
-  "tag": "work",
-  "labels": ["inbox", "important"]
-}, {
-  "userId": "2334uudsa",
-  "name": "Kostya Danovsky",
-  "professionMedalSummary" : "6",
-  "normalMedalSummary" : "3",
-  "sum" : "9",
-  "pic": "img/Kostya.png",
-  "email": "schwart@mail.com",
-  "position": "初级客户管理",
-  "tag": "family",
-  "labels": ["inbox", "important"]
-}, {
-  "userId": "2334aefvv",
-  "name": "Kostya Danovsky",
-  "professionMedalSummary" : "6",
-  "normalMedalSummary" : "3",
-  "sum" : "9",
-  "pic": "img/Kostya.png",
-  "email": "schwart@mail.com",
-  "position": "初级客户管理",
-  "tag": "family",
-  "labels": ["inbox", "important"]
-}, {
-  "userId": "8223sdffn",
-  "name": "Andrey Hrabouski",
-  "professionMedalSummary" : "6",
-  "normalMedalSummary" : "3",
-  "sum" : "9",
-  "pic": "img/Andrey.png",
-  "email": "lakeishaphillips@mail.com",
-  "position": "初级客户管理",
-  "tag": "family",
-  "labels": ["spam"]
-}, {
-  "userId": "9391xdsff",
-  "name": "Vlad Lugovsky",
-  "professionMedalSummary" : "6",
-  "normalMedalSummary" : "3",
-  "sum" : "9",
-  "pic": "img/Vlad.png",
-  "email": "carlsongoodman@mail.com",
-  "position": "初级客户管理",
-  "tag": "study",
-  "labels": ["draft"]
-}, {
-  "userId": "8223xsdaa",
-  "name": "Andrey Hrabouski",
-  "professionMedalSummary" : "6",
-  "normalMedalSummary" : "3",
-  "sum" : "9",
-  "pic": "img/Andrey.png",
-  "email": "lakeishaphillips@mail.com",
-  "position": "初级客户管理",
-  "tag": "family",
-  "labels": ["draft"]
-}]
+{
+	"errcode":0,
+	"errmsg":"成功",
+	"body":[
+	{
+		"medalRecordId":1,
+		"userId":"yangying",
+		"professionMedalSummary":2,
+		"normalMedalSummary":1,
+		"name": "Vlad Lugovsky",
+		"updateUser":"zouweizheng",
+		"updateTime":1480702766000
+	},
+	{
+		"medalRecordId":2,
+		"userId":"zouweizheng",
+		"professionMedalSummary":1,
+		"normalMedalSummary":1,
+		"name": "Andrey Hrabouski",
+		"updateUser":"zouweizheng",
+		"updateTime":1482947383000
+	}]
+}

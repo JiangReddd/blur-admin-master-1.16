@@ -12,10 +12,12 @@
   function rankMonthCtrl($scope, $timeout, $http, baConfig, baUtil) {
     var pieColor = baUtil.hexToRGB(baConfig.colors.defaultText, 0.2);
     $http.get('app/pages/medal/rank/rankMonth/rankMonth.json').then(function(response) {
-      $scope.charts = response.data.map(function(i) {
+      $scope.charts = response.data.body.map(function(i) {
         i.color = pieColor;
         return i;
       });
+      console.log(response.data.body[0]);
+      console.log($scope.charts);
     });
 
     function getRandomArbitrary(min, max) {

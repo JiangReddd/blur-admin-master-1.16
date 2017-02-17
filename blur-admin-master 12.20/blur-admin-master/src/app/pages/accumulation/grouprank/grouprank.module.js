@@ -27,20 +27,26 @@
           title: '班组排行榜 - 全部班组排行榜',
           controller: "groupAllCtrl",
           controllerAs: "allListCtrl"
-        }).state('accumulation.grouprank.label', {
-          url: '/inbox',
+        }).state('accumulation.grouprank.groupPart', {
+          url: '/groupPart',
           templateUrl: 'app/pages/accumulation/grouprank/groupPart/groupPart.html',
           title: '班组排行榜 - 室班组排行榜',
           controller: "groupPartCtrl",
           controllerAs: "listCtrl",
         }).state('accumulation.grouprank.detail', {
-          url: '/inbox/:id',
+          url: '/detail/:groupId',
           templateUrl: 'app/pages/accumulation/grouprank/groupDetail/groupDetail.html',
-          title: '综合排行榜 - 个人信息',
+          title: '综合排行榜 - 班组信息',
           controller: "groupDetailCtrl",
           controllerAs: "detailCtrl"
+        }).state('accumulation.grouprank.allDetail', {
+          url: '/allDetail/:groupId',
+          templateUrl: 'app/pages/accumulation/grouprank/groupAllDetail/groupAllDetail.html',
+          title: '综合排行榜 - 班组信息',
+          controller: "groupAllDetailCtrl",
+          controllerAs: "detailCtrl"
         });
-    $urlRouterProvider.when('/accumulation/grouprank','/accumulation/grouprank/inbox');
+    $urlRouterProvider.when('/accumulation/grouprank','/accumulation/grouprank/groupPart');
   }
 
 })();

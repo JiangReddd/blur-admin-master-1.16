@@ -12,9 +12,9 @@
 	function rankListCtrl($scope,$stateParams,$http) {
 		var vm = this;
 		$http.get('app/pages/medal/rank/rank.json').then(function(res) {
-			var messages = res.data.sort(function(a, b) {
-				if (a.date > b.date) return 1;
-				if (a.date < b.date) return -1;
+			var messages = res.data.body.sort(function(a, b) {
+				if (a.updateTime > b.updateTime) return 1;
+				if (a.updateTime < b.updateTime) return -1;
 			}).reverse();
 			vm.messages = messages;
 			// vm.getMessageById = function(id) {
@@ -23,7 +23,6 @@
 			//   })[0];
 			// };
 			//     
-			vm.label = $stateParams.label;
 		});
 	}
 })();

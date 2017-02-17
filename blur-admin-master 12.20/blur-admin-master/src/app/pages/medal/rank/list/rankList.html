@@ -34,20 +34,20 @@
             </label>
           </div>
         </td> -->
-        <td  class="photo-td" ui-sref="medal.rank.detail({userId: m.userId, label: listCtrl.label})"><img ng-src="{{m.name.split(' ')[0] | profilePicture}}" class="little-human-picture"></td>
-        <td  ui-sref="medal.rank.detail({userId: m.userId, label: listCtrl.label})">
+        <td  class="photo-td" ui-sref="medal.rank.detail({userId: m.userId})"><img ng-src="{{m.name.split(' ')[0] | profilePicture}}" class="little-human-picture"></td>
+        <td  ui-sref="medal.rank.detail({userId: m.userId})">
           <div class="name-container">
             <div><span class="name">{{m.name}}</span></div>
             <!-- <div><span class="tag label label-primary {{m.tag}}">{{m.tag}}</span></div> -->
           </div>
         </td>
-        <td  ui-sref="medal.rank.detail({userId: m.userId, label: listCtrl.label})">
+        <td  ui-sref="medal.rank.detail({userId: m.userId})">
           <div>
             <span> 职业生业勋章数：</span>
             <span> {{m.professionMedalSummary}}</span>
           </div>
         </td>
-        <td  ui-sref="medal.rank.detail({userId: m.userId, label: listCtrl.label})">
+        <td  ui-sref="medal.rank.detail({userId: m.userId})">
           <div>
             <span> 常规勋章数：</span>
             <span> {{m.normalMedalSummary}}</span>

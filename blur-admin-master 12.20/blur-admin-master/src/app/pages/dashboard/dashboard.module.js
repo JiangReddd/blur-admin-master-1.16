@@ -15,6 +15,7 @@
           url: '/dashboard',
           templateUrl: 'app/pages/dashboard/dashboard.html',
           title: '我的主页',
+          controller:'dashboardCtrl',
           sidebarMeta: {
             icon: 'ion-android-home',
             order: 0,

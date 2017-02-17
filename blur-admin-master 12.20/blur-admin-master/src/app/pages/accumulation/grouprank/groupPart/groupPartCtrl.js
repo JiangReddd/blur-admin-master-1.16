@@ -12,10 +12,11 @@
 	function groupPartCtrl($scope,$stateParams,$http) {
 		var vm = this;
 		$http.get('app/pages/accumulation/grouprank/grouprank.json').then(function(res) {
-			var messages = res.data.sort(function(a, b) {
-				if (a.date > b.date) return 1;
-				if (a.date < b.date) return -1;
-			}).reverse();
+			console.log(res.data.body);
+			var messages = res.data.body/*.sort(function(a, b) {
+				if (a.groupId > b.groupId) return 1;
+				if (a.groupId < b.groupId) return -1;
+			}).reverse()*/;
 			vm.messages = messages;
 			// vm.getMessageById = function(id) {
 			//   return messages.filter(function(m) {
@@ -23,7 +24,7 @@
 			//   })[0];
 			// };
 			//     
-			vm.label = $stateParams.label;
+			//vm.label = $stateParams.label;
 		});
 	}
 })();
