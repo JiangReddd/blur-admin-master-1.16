@@ -28,12 +28,14 @@
         }).state('management.userManagement.add', {
           url: '/add',
           templateUrl: 'app/pages/management/userManagement/userManagementAdd.html',
+          controller:'userManagementAddCtrl',
+          controllerAs:'addCtrl',
           title: '新增用户信息',
         }).state('management.userManagement.modify', {
           url: '/modify/:userId',
           templateUrl: 'app/pages/management/userManagement/userManagementModify.html',
           controller:'userManagementModifyCtrl',
-          controllerAs:'detailCtrl',
+          controllerAs:'modifyCtrl',
           title: '修改用户信息',
         });
     $urlRouterProvider.when('/management/userManagement','/management/userManagement/list');

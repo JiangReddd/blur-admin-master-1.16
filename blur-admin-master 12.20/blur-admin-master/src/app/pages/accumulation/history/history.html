@@ -12,9 +12,7 @@
               <th>班组</th>
               <th>积分条目</th>
               <th>积分分数</th>
-              <th>上传者</th>
               <th>月份</th>
-              <th>操作</th>
             </tr>
             <tr>
               <th></th>
@@ -24,13 +22,10 @@
                          type="search"/></th>
               <th><input ng-model="search.creditItemName" placeholder="Search creditItem" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input ng-model="search.credit" placeholder="Search credit" class="input-sm form-control search-input"
+              <th><input ng-model="search.credit" placeholder="Search creditScore" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input ng-model="search.createUser" placeholder="Search createUser" class="input-sm form-control search-input" type="search"/>
+              <th><input ng-model="search.createTime" placeholder="Search month" class="input-sm form-control search-input" type="search"/>
               </th>
-              <th><input ng-model="search.creditTime" placeholder="Search creditTime" class="input-sm form-control search-input" type="search"/>
-              </th>
-              <th></th>
             </tr>
             </thead>
             <tbody>
@@ -40,14 +35,12 @@
               <td>{{item.groupName}}</td>
               <td>{{item.creditItemName}}</td>
               <td>{{item.credit}}</td>
-              <td>{{item.createUser}}</td>
               <td>{{item.creditTime}}</td>
-              <td><a ui-sref="management.accumulationRelease.detail({id: item.id})">详情</a></td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-              <td colspan="8" class="text-center">
+              <td colspan="7" class="text-center">
                 <div></div>
               </td>
             </tr>

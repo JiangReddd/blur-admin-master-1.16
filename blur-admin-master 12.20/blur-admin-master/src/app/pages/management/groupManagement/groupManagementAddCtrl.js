@@ -34,13 +34,13 @@
                         //上传成功的操作
                         console.log("success");
                         alert("班组新增成功");
-	                    $location.path("/management/groupTypeManagement/list", {}, { reload: true });
+	                    $location.path("/management/groupManagement/list", {}, { reload: true });
                 })
                 .error(function(){
                         //console.log(data);
                         console.log("error");
                         alert("班组新增失败");
-	                    $location.path("/management/groupTypeManagement/add", {}, { reload: true });
+	                    $location.path("/management/groupManagement/add", {}, { reload: true });
                 });
 		}
 

@@ -18,7 +18,7 @@
           title: '积分发放记录',
           sidebarMeta: {
             icon: 'ion-android-home',
-            order: 500,
+            order: 550,
           },
         }).state('management.accumulationRelease.list', {
           url: '/list',

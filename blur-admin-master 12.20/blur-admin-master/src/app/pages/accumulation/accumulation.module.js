@@ -8,6 +8,7 @@
   angular.module('BlurAdmin.pages.accumulation', [
       'BlurAdmin.pages.accumulation.grouprank',
       'BlurAdmin.pages.accumulation.myAccumulation',
+      'BlurAdmin.pages.accumulation.history',
       'BlurAdmin.pages.accumulation.accumulationRule'
 
     ])

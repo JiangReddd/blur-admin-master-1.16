@@ -21,20 +21,25 @@
 				return m.groupId == $stateParams.groupId;
 			})[0]; 
 			vm.standardSelectItems = res.data.body.GroupClass; 
-			console.log(res.data.body.GroupClass);  
+			console.log(vm.standardSelectItems);  
 			console.log(vm.mail.groupClassId); 
 			
-			/*$.each(vm.standardSelectItems,function(i){
+			$.each(vm.standardSelectItems,function(i){
 				if(vm.mail.groupClassId == vm.standardSelectItems[i].groupClassId){
-					//$(".selectpicker option:eq(1)").attr("selected",true);
+					//$(".selectpicker option:eq(0)").attr("ng-selected",true);
 					//vm.standardSelected = "object:150";
-					//console.log(vm.mail.groupClassId);
-					//console.log(vm.standardSelectItems[i].groupClassName);
-					//vm.standardSelected = vm.standardSelectItems[i].groupClassName;
-					//console.log(vm.standardSelected);
+					console.log(vm.mail.groupClassId);
+					console.log(vm.standardSelectItems[i].groupClassName);
+
+
+					vm.standardSelected = vm.standardSelectItems[i].groupClassId;
+
+
+					console.log(vm.standardSelected);
 					//$(".selectpicker").val(vm.standardSelectItems[i].groupClassName);
+					//$(".selectpicker option:eq(1)").attr("ng-selected",true);
 				} 
-			})*/
+			})
 			/*$http.get('app/pages/management/groupTypeManagement/groupTypeManagement.json').then(function(res) {
 				vm.standardSelectItems = [];
 					var messages = res.data.body.sort(function(a, b) {
@@ -50,9 +55,9 @@
 			var data = {};
 			data.groupId = vm.mail.groupId;
 			data.groupName = vm.mail.groupName;
-			data.groupClassId = vm.standardSelected.groupClassId;
+			data.groupClassId = vm.standardSelected;
 			console.log(data);
-			var url = '/admin/updateGroupClass';
+			var url = '/admin/updateUserGroup';
             $http.post(url,data)
                 .success(function(response){
                         //上传成功的操作

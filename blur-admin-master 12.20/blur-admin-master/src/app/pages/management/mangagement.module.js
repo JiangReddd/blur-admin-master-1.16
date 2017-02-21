@@ -29,6 +29,9 @@
 
       'BlurAdmin.pages.management.groupTypeManagement',
 
+      'BlurAdmin.pages.management.medalInquiry',
+
+      'BlurAdmin.pages.management.accumulationInquiry',
 
     ])
     .config(routeConfig);

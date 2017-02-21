@@ -6,11 +6,11 @@
 {
     'use strict';
 
-    angular.module('BlurAdmin.pages.medal.history')
-    .controller('historyReleaseCtrl', historyReleaseCtrl);
+    angular.module('BlurAdmin.pages.accumulation.history')
+    .controller('accumulationHistoryReleaseCtrl', accumulationHistoryReleaseCtrl);
 
     /** @ngInject */
-    function historyReleaseCtrl($http, $q, $filter, editableOptions, editableThemes)
+    function accumulationHistoryReleaseCtrl($http, $q, $filter, editableOptions, editableThemes)
     {
       var vm = this;
 
@@ -33,11 +33,11 @@
                           dbody[i].medalType = "年度勋章";
                         }
 
-                        var exchangeUpdateTime = dbody[i].updateTime;
+                        var exchangeUpdateTime = dbody[i].creditTime;
                         var newDate = new Date();
                         newDate.setTime(exchangeUpdateTime);
                         //console.log(newDate.toLocaleDateString());
-                        dbody[i].updateTime = newDate.toLocaleDateString();
+                        dbody[i].creditTime = newDate.toLocaleDateString();
 
                     });
                 vm[target] = dbody;
@@ -51,8 +51,8 @@
 
         vm.smartTablePageSize = 10;
 
-        //getJson('app/pages/medal/history/history.json', 'smartTableData').then(function ()
-        getJson('/admin/getMedalRecord', 'smartTableData').then(function ()
+        getJson('app/pages/accumulation/history/history.json', 'smartTableData').then(function ()
+        //getJson('/admin/getMedalRecord', 'smartTableData').then(function ()
         {
 
            }

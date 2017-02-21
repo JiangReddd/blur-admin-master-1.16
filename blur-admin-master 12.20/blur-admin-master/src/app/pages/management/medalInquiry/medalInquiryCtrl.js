@@ -6,13 +6,13 @@
 {
     'use strict';
 
-    angular.module('BlurAdmin.pages.medal.history')
-    .controller('historyReleaseCtrl', historyReleaseCtrl);
+    angular.module('BlurAdmin.pages.management.medalInquiry')
+    .controller('medalInquiryCtrl', medalInquiryCtrl);
 
     /** @ngInject */
-    function historyReleaseCtrl($http, $q, $filter, editableOptions, editableThemes)
+    function medalInquiryCtrl($http, $q, $filter, editableOptions, editableThemes)
     {
-      var vm = this;
+    	var vm = this;
 
         function getJson(url, target)
         {
@@ -36,7 +36,7 @@
                         var exchangeUpdateTime = dbody[i].updateTime;
                         var newDate = new Date();
                         newDate.setTime(exchangeUpdateTime);
-                        //console.log(newDate.toLocaleDateString());
+                        console.log(newDate.toLocaleDateString());
                         dbody[i].updateTime = newDate.toLocaleDateString();
 
                     });
@@ -51,8 +51,8 @@
 
         vm.smartTablePageSize = 10;
 
-        //getJson('app/pages/medal/history/history.json', 'smartTableData').then(function ()
-        getJson('/admin/getMedalRecord', 'smartTableData').then(function ()
+        getJson('app/pages/management/medalInquiry/medalInquiry.json', 'smartTableData').then(function ()
+        //getJson('/admin/getMedalRecord', 'smartTableData').then(function ()
         {
 
            }

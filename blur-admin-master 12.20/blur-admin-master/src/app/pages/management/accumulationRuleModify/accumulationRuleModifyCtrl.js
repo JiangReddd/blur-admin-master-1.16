@@ -33,11 +33,13 @@
                 .success(function(response){
                           //上传成功的操作
                           console.log("success");
+                          alert("积分规则修改成功");
                 })
                 .error(function(){
                           //console.log(data);
                           console.log("error");
-                               });
+                          alert("积分规则修改失败");
+                });
           }
 
 

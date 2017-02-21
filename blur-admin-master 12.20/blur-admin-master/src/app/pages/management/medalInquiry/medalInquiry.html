@@ -13,7 +13,7 @@
               <th >勋章类型</th>
               <th >组别名称</th>
               <th >上传时间</th>
-              <th >操作</th>
+              <!-- <th >操作</th> -->
             </tr>
             <tr>
               <th></th>
@@ -27,19 +27,19 @@
               </th>
               <th><input ng-model="search.updateTime" placeholder="" class="input-sm form-control search-input" type="search"/>
               </th>
-              <th></th>
+              <!-- <th></th> -->
             </tr>
             </thead>
             <tbody>
 <!--             <p>smartTableData:{{releaseCtrl.smartTableData}}</p> -->
-            <tr ng-repeat="item in releaseCtrl.smartTableData | filter:search:strict">
+            <tr ng-repeat="item in inquiryCtrl.smartTableData | filter:search:strict">
               <td class="table-id">{{$index+1}}</td>
               <td>{{item.userName}}</td>
               <td>{{item.medalName}}</td>
               <td>{{item.medalType}}</td>
               <td>{{item.groupName}}</td>
               <td>{{item.updateTime}}</td>
-              <td><a ui-sref="management.medalRelease.detail({medalRecordId: item.medalRecordId})">详情</a></td>
+              <!-- <td><a ui-sref="management.medalRelease.detail({medalRecordId: item.medalRecordId})">详情</a></td> -->
             </tr>
             </tbody>
             <tfoot>

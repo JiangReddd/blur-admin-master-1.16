@@ -14,7 +14,7 @@
               <th>积分分数</th>
               <th>上传者</th>
               <th>月份</th>
-              <th>操作</th>
+              <!-- <th>操作</th> -->
             </tr>
             <tr>
               <th></th>
@@ -30,11 +30,11 @@
               </th>
               <th><input ng-model="search.creditTime" placeholder="Search creditTime" class="input-sm form-control search-input" type="search"/>
               </th>
-              <th></th>
+              <!-- <th></th> -->
             </tr>
             </thead>
             <tbody>
-            <tr  ng-repeat="item in releaseCtrl.smartTableData | filter:search:strict">
+            <tr  ng-repeat="item in inquiryCtrl.smartTableData | filter:search:strict">
               <td class="table-id">{{$index+1}}</td>
               <td>{{item.userName}}</td>
               <td>{{item.groupName}}</td>
@@ -42,7 +42,7 @@
               <td>{{item.credit}}</td>
               <td>{{item.createUser}}</td>
               <td>{{item.creditTime}}</td>
-              <td><a ui-sref="management.accumulationRelease.detail({id: item.id})">详情</a></td>
+              <!-- <td><a ui-sref="management.accumulationRelease.detail({id: item.id})">详情</a></td> -->
             </tr>
             </tbody>
             <tfoot>

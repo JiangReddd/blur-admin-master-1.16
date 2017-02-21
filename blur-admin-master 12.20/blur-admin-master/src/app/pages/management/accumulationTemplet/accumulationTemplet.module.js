@@ -14,7 +14,7 @@
         .state('management.accumulationTemplet', {
           url: '/accumulationTemplet',
           templateUrl: 'app/pages/management/accumulationTemplet/accumulationTemplet.html',
-          title: '积分模板上传下载',
+          title: '积分模板上传',
           controller:"accumulationTempletCtrl",
           sidebarMeta: {
             icon: 'ion-android-home',

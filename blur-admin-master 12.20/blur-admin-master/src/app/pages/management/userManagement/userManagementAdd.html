@@ -55,11 +55,27 @@
               </div>
             </div> 
             <div class="form-group">
-              <label for="telephoneNumber" class="col-sm-2 control-label">手机号</label>
+              <label for="ruleIntro" class="col-sm-2 control-label">用户权限</label>
               <div class="col-sm-8">
-                <input type="text" class="form-control" id="telephoneNumber" ng-model="addCtrl.mail.telephoneNumber">
+                <div>
+                    <select class="form-control selectpicker"  title="请选择类型"
+                            ng-model="addCtrl.standardRoleSelected"
+                            ng-options="item.roleId as item.roleName for item in addCtrl.standardRoleSelectItems">
+                    </select>
+                </div>
               </div>
             </div> 
+            <div class="form-group">
+              <label for="ruleIntro" class="col-sm-2 control-label">班组类别</label>
+              <div class="col-sm-8">
+                <div>
+                    <select class="form-control selectpicker"  title="请选择类型"
+                            ng-model="addCtrl.standardSelected"
+                            ng-options="item.groupId as item.groupName for item in addCtrl.standardSelectItems">
+                    </select>
+                </div>
+              </div>
+            </div>
             <div class="form-group">
               <label for="isInService" class="col-sm-2 control-label">是否在职</label>
               <div class="input-demo radio-demo row">

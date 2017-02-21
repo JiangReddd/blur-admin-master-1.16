@@ -17,7 +17,7 @@
           templateUrl: 'app/pages/management/groupTypeManagement/groupTypeManagement.html',
           title: '班组类别管理列表',
           sidebarMeta: {
-            order: 900,
+            order: 850,
           },
         }).state('management.groupTypeManagement.list', {
           url: '/list',

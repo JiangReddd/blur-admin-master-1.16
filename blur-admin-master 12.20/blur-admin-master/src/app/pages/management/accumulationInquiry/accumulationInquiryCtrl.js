@@ -5,11 +5,11 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.management.accumulationRelease')
-      .controller('accumulationReleaseCtrl', accumulationReleaseCtrl);
+  angular.module('BlurAdmin.pages.management.accumulationInquiry')
+      .controller('accumulationInquiryCtrl', accumulationInquiryCtrl);
 
   /** @ngInject */
-  function accumulationReleaseCtrl($http, $q, $filter, editableOptions, editableThemes) {
+  function accumulationInquiryCtrl($http, $q, $filter, editableOptions, editableThemes) {
 
       var vm = this;
 
@@ -19,7 +19,7 @@
                   $http.get(url)
                   .success(function (d)
                   {
-                      console.log(d.body);
+                      //console.log(d.body);
                       $.each(d.body,function(i){
                         var newDate = new Date();
                         var exchangecreditTime = d.body[i].creditTime;
@@ -27,7 +27,7 @@
                         console.log(d.body[i].creditTime); 
 
                       });
-                      console.log(d.body);
+                      //console.log(d.body);
 
                       vm[target] = d.body;
                       deferred.resolve();
@@ -38,7 +38,7 @@
               }
 
         //getJson('/admin/getCreditRecordAll', 'smartTableData').then(function ()
-        getJson('app/pages/management/accumulationRelease/accumulationRelease.json', 'smartTableData').then(function ()
+        getJson('app/pages/management/accumulationInquiry/accumulationInquiry.json', 'smartTableData').then(function ()
         {
 
            }

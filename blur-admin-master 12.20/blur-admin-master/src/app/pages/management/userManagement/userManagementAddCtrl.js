@@ -12,27 +12,42 @@
 	function userManagementAddCtrl($http,$stateParams,$location) {
 		var vm = this;
 
-		$("input[type=file]").change(function(){
-			$(this).parents(".uploader").find(".filename").val($(this).val());
-			console.log("1");
-			console.log($(this).val());
+		$http.get('/admin/getUserGroupAll').then(function(res) {
+		//$http.get('app/pages/management/groupManagement/groupManagement.json').then(function(res) {
+		vm.standardSelectItems = [];
+			var messages = res.data.body.UserGroup.sort(function(a, b) {
+				if (a.groupId > b.groupId) return 1;
+				if (a.groupId < b.groupId) return -1;
+			}).reverse();
+			console.log(messages);
+			vm.standardSelectItems = messages; 
+			console.log(vm.standardSelectItems);  
 		});
-		$("input[type=file]").each(function(){
-			if($(this).val()==""){
-				$(this).parents(".uploader").find(".filename").val("未选择上传文件");
-			}
-  
+
+		//获取用户权限选择
+		//$http.get('app/pages/management/userManagement/userRole.json').then(function(res) {
+		$http.get('/admin/getUserRoleAll').then(function(res) {
+		vm.standardRoleSelectItems = [];
+			var messages = res.data.body.sort(function(a, b) {
+				if (a.roleId > b.roleId) return 1;
+				if (a.roleId < b.roleId) return -1;
+			}).reverse();
+			console.log(messages);
+			vm.standardRoleSelectItems = messages; 
+			console.log(vm.standardRoleSelectItems);  
 		});
+
 		$(".col-xs-1, .col-sm-1, .col-md-1, .col-lg-1").css("padding-left","0px");
 
 		vm.insert = function(){
 			var data = {};
 			data.userId = vm.mail.userId;
 			data.userName = vm.mail.userName;
+			data.groupId = vm.standardSelected;
 			data.isInService = $("input:checked").val();
 			data.workNumber = vm.mail.workNumber;
 			data.takeOverNumber = vm.mail.takeOverNumber;
-			data.telephoneNumber = vm.mail.telephoneNumber;
+			data.roleId = vm.standardRoleSelected;
 			console.log(data);
 
 			var url = '/admin/insertUserInfoForAdmin';

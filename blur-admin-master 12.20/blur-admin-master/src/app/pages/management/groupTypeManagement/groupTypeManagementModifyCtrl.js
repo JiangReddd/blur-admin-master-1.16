@@ -11,7 +11,8 @@
 	/** @ngInject */
 	function groupTypeManagementModifyCtrl($http,$stateParams,$location) {
 		var vm = this;
-		$http.get('app/pages/management/groupTypeManagement/groupTypeManagement.json').then(function(res) {
+		//$http.get('app/pages/management/groupTypeManagement/groupTypeManagement.json').then(function(res) {
+		$http.get('/admin/getGroupClassAll').then(function(res) {
 			var messages = res.data.body.sort(function(a, b) {
 				if (a.groupClassId > b.groupClassId) return 1;
 				if (a.groupClassId < b.groupClassId) return -1;

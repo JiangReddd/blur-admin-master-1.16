@@ -17,7 +17,7 @@
           title: '勋章发放记录',
           abstract: true,
           sidebarMeta: {
-            order: 200,
+            order: 150,
           },
         }).state('management.medalRelease.list', {
           url: '/list',

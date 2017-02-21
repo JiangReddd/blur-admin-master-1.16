@@ -103,7 +103,17 @@
         });
     };
 
+
+
     $scope.getFile = function () {
+
+      /*$scope.file = {"lastModified":1484809277106,
+          "lastModifiedDate":"Thu Jan 19 2017 15:01:17 GMT+0800 (中国标准时间)",
+          "name":"84481_20130116142820494200_1.jpg",
+          "size":137992,
+          "type":"image/png",
+          "webkitRelativePath":""};
+      console.log($scope.file);*/
       fileReader.readAsDataUrl($scope.file, $scope)
           .then(function (result) {
             $scope.picture = result;

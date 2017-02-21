@@ -19,21 +19,21 @@
                   <th></th>
                   <th><input ng-model="search.userName" placeholder="Search userName" class="input-sm form-control search-input"
                              type="search"/></th>
-                  <th><input ng-model="search.creditItem" placeholder="Search creditItem" class="input-sm form-control search-input"
+                  <th><input ng-model="search.creditItemName" placeholder="Search creditItemName" class="input-sm form-control search-input"
                              type="search"/></th>
-                  <th><input ng-model="search.creditScore" placeholder="Search creditScore" class="input-sm form-control search-input"
+                  <th><input ng-model="search.credit" placeholder="Search credit" class="input-sm form-control search-input"
                              type="search"/></th>
-                  <th><input ng-model="search.updateTime" placeholder="Search updateTime" class="input-sm form-control search-input" type="search"/>
+                  <th><input ng-model="search.createTime" placeholder="Search creditTime" class="input-sm form-control search-input" type="search"/>
                   </th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr  ng-repeat="item in accumulationCtrl.accumulationData | filter:search:strict">
-                  <td class="table-id">{{item.id}}</td>
+                  <td class="table-id">{{$index+1}}</td>
                   <td>{{item.userName}}</td>
-                  <td>{{item.creditItem}}</td>
-                  <td>{{item.creditScore}}</td>
-                  <td>{{item.updateTime}}</td>
+                  <td>{{item.creditItemName}}</td>
+                  <td>{{item.credit}}</td>
+                  <td>{{item.creditTime}}</td>
                 </tr>
                 </tbody>
                 <tfoot>
@@ -52,7 +52,7 @@
     </div>
 
   </uib-tab>
-  <uib-tab heading="2020">
+  <!-- <uib-tab heading="2020">
     <p>
       还没到2020年哟，让我们来期待明年的业绩吧~
     </p>
@@ -61,5 +61,5 @@
       <div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="{{::( 'Programming' | kameleonImg )}}"></div>
       <div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="{{::( 'Dna' | kameleonImg )}}"></div>
     </div>
-  </uib-tab>
+  </uib-tab> -->
 </uib-tabset>
