@@ -46,8 +46,8 @@
           vm.getTime = new Date();
           var accumulationYearNow = String(vm.getTime.getYear() + 1900);
           //console.log(accumulationYearNow);
-          //getJson('/admin/getCreditById', 'accumulationData').then(function ()
-          getJson('app/pages/accumulation/myAccumulation/myAccumulation.json', 'accumulationData',accumulationYearNow).then(function ()
+          getJson('/user/getMyCreditItem', 'accumulationData').then(function ()
+          //getJson('app/pages/accumulation/myAccumulation/myAccumulation.json', 'accumulationData',accumulationYearNow).then(function ()
           {
            
           });
@@ -57,7 +57,8 @@
           console.log(vm.test1);*/
 
           vm.year = function(yearNum){
-             var url = "app/pages/accumulation/myAccumulation/myAccumulation.json"/* + yearNum + ".json"*/;
+             //var url = "app/pages/accumulation/myAccumulation/myAccumulation.json"/* + yearNum + ".json"*/;
+             var url = "/user/getMyCreditItem"/* + yearNum + ".json"*/;
              //console.log(url);
              getJson(url, 'accumulationData', yearNum);
           }

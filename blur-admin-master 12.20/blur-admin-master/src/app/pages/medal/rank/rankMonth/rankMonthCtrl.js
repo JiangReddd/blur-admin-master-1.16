@@ -11,7 +11,8 @@
   /** @ngInject */
   function rankMonthCtrl($scope, $timeout, $http, baConfig, baUtil) {
     var pieColor = baUtil.hexToRGB(baConfig.colors.defaultText, 0.2);
-    $http.get('app/pages/medal/rank/rankMonth/rankMonth.json').then(function(response) {
+    //$http.get('app/pages/medal/rank/rankMonth/rankMonth.json').then(function(response) {
+    $http.get('/user/getMedalChartsOfMonth').then(function(response) {
       $scope.charts = response.data.body.map(function(i) {
         i.color = pieColor;
         return i;

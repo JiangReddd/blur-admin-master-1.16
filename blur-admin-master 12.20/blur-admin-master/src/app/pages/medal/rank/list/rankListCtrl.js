@@ -11,7 +11,8 @@
 	/** @ngInject */
 	function rankListCtrl($scope,$stateParams,$http) {
 		var vm = this;
-		$http.get('app/pages/medal/rank/rank.json').then(function(res) {
+		//$http.get('app/pages/medal/rank/rank.json').then(function(res) {
+		$http.get('/user/getMedalInfoUserSummaryChars').then(function(res) {
 			var messages = res.data.body.sort(function(a, b) {
 				if (a.updateTime > b.updateTime) return 1;
 				if (a.updateTime < b.updateTime) return -1;

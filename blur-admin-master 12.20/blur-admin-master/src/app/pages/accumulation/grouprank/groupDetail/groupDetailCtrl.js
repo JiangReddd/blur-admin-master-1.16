@@ -11,7 +11,8 @@
 	/** @ngInject */
 	function groupDetailCtrl($http,$stateParams) {
 		var vm = this;
-		$http.get('app/pages/accumulation/grouprank/grouprank.json').then(function(res) {
+		//$http.get('app/pages/accumulation/grouprank/grouprank.json').then(function(res) {
+		$http.get('/user/getTotalCreditRankForClassByGroup').then(function(res) {
 			var messages = res.data.body.sort(function(a, b) {
 				if (a.groupId > b.groupId) return 1;
 				if (a.groupId < b.groupId) return -1;
