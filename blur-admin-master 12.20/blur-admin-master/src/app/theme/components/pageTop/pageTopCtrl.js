@@ -9,12 +9,13 @@
     .controller('pageTopCtrl', pageTopCtrl);
 
   /** @ngInject */
-  function pageTopCtrl($scope, $rootScope, fileReader, $filter, $uibModal, $http,$stateParams) {
+  function pageTopCtrl($window, $location, $scope, $rootScope, fileReader, $filter, $uibModal, $http,$stateParams) {
     var vm = this;
 
     vm.logout = function() {
-		$http.post('logout', {}).finally(function() {
-			$location.path("/");
+		$http.post('logout', {}).success(function() {
+      $window.location.href = "/login.html";
+      //$location.path("/", {}, { reload: true });
 		});
 	}
 

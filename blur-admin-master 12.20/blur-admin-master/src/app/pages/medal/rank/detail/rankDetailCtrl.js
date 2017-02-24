@@ -10,7 +10,7 @@
 
 	/** @ngInject */
 	function rankDetailCtrl($http,$stateParams) {
-		var vm = this;/user/getMedalInfoUserSummaryChars
+		var vm = this;
 		//$http.get('app/pages/medal/rank/rank.json').then(function(res) {
 		$http.get('/user/getMedalInfoUserSummaryChars').then(function(res) {
 			var messages = res.data.body.sort(function(a, b) {

@@ -37,8 +37,8 @@
                   return deferred.promise;
               }
 
-        //getJson('/admin/getCreditRecordAll', 'smartTableData').then(function ()
-        getJson('app/pages/management/accumulationRelease/accumulationRelease.json', 'smartTableData').then(function ()
+        getJson('/admin/getCreditRecordAll', 'smartTableData').then(function ()
+        //getJson('app/pages/management/accumulationRelease/accumulationRelease.json', 'smartTableData').then(function ()
         {
 
            }

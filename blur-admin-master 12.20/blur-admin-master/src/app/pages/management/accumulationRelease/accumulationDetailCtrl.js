@@ -14,8 +14,8 @@
     {
     	var vm = this;
 
-        $http.get('app/pages/management/accumulationRelease/accumulationRelease.json').then(function(res) {
-        //$http.get('/admin/getCreditRecordAll').then(function(res) {
+        //$http.get('app/pages/management/accumulationRelease/accumulationRelease.json').then(function(res) {
+        $http.get('/admin/getCreditRecordAll').then(function(res) {
             var messages = res.data.body.sort(function(a, b) {
                 if (a.id > b.id) return 1;
                 if (a.id < b.id) return -1;
