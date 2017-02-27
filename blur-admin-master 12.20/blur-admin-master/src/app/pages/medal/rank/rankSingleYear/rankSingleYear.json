@@ -1,313 +1,133 @@
-[{
+{
+"errcode":0,
+"errmsg":"成 功",
+"body":[
+    {
+    "medalInfo":
+    {
+    "medalId":3,
+    "medalName":"甜蜜蜜勋章",
+    "medalInfo":"当月提交2条客户表扬录音并被通过，即可点亮",
+    "medalType":1,
+    "growType":1,
+    "imageUrl":null,
+    "highestLevel":12,
+    "priorityNum":7,
+    "isEnable":1,
+    "updateUser":"zouweizheng",
+    "updateTime":1480702588000
+    },
+    "userList":[
+    {
+    "medalUserId":3,
+    "medalId":3,
+    "userId":"zouweizheng",
+    "medalLevel":1,
+    "updateUser":"zouweizheng",
+    "updateTime":1480702732000,
+    "userName":"邹伟政",
+    "workNumber":"1234003",
+    "takeOverNumber":"3",
+    "isInService":1,
+    "telephoneNumber":"13802880000",
+    "picturePath":"abcdef",
+    "groupId":101,
+    "groupName":"互联网二组",
+    "groupClassId":100001,
+    "groupClassName":"互联网11"
+    }
+    ]
+    },
+    {
+    "medalInfo":
+    {
+    "medalId":7,
+    "medalName":"新的",
+    "medalInfo":"新的勋章测试一下咯",
+    "medalType":2,
+    "growType":0,
+    "imageUrl":"12233",
+    "highestLevel":3,
+    "priorityNum":3,
+    "isEnable":1,
+    "updateUser":"yangying",
+    "updateTime":1486974935000
+    },
+    "userList":[]
+    },
+    {
+    "medalInfo":
+    {
+    "medalId":13,
+    "medalName":"甜蜜蜜勋章",
+    "medalInfo":"当月提交2条客户表扬录音并被通过，即可点亮",
+    "medalType":1,
+    "growType":1,
+    "imageUrl":null,
+    "highestLevel":12,
+    "priorityNum":7,
+    "isEnable":1,
+    "updateUser":"zouweizheng",
+    "updateTime":1480702588000
+    },
+    "userList":[
+    {
+    "medalUserId":3,
+    "medalId":13,
+    "userId":"zouweizheng",
+    "medalLevel":1,
+    "updateUser":"zouweizheng",
+    "updateTime":1480702732000,
+    "userName":"邹伟政",
+    "workNumber":"1234003",
+    "takeOverNumber":"3",
+    "isInService":1,
+    "telephoneNumber":"13802880000",
+    "picturePath":"abcdef",
+    "groupId":101,
+    "groupName":"互联网二组",
+    "groupClassId":100001,
+    "groupClassName":"互联网11"
+    }
+    ]
+    },
 
-    "description": "biganzi",
-    "stats": "笔杆子",
-    "icon": "Apartment",
-    "img": "assets/img/app/profile/biganzi.png",
-    "list": [{
-        "image": "assets/img/theme/icon/kameleon/Magician.svg",
-        "browser": "赵大锤",
-        "visits": "10,392",
-        "isVisitsUp": true,
-        "purchases": "4,214",
-        "isPurchasesUp": true,
-        "percent": "45%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/ninja.svg",
-        "browser": "李国柱",
-        "visits": "7,873",
-        "isVisitsUp": true,
-        "purchases": "3,031",
-        "isPurchasesUp": false,
-        "percent": "28%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/student-3.svg",
-        "browser": "陈狗蛋",
-        "visits": "5,890",
-        "isVisitsUp": false,
-        "purchases": "2,102",
-        "isPurchasesUp": false,
-        "percent": "17%",
-        "isPercentUp": false
-    }, {
-        "image": "assets/img/theme/icon/kameleon/student-3.svg",
-        "browser": "罗智锋",
-        "visits": "4,001",
-        "isVisitsUp": false,
-        "purchases": "1,001",
-        "isPurchasesUp": false,
-        "percent": "14%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/boss-3.svg",
-        "browser": "张大千",
-        "visits": "1,833",
-        "isVisitsUp": true,
-        "purchases": "83",
-        "isPurchasesUp": true,
-        "percent": "5%",
-        "isPercentUp": false
-    }]
-}, {
+    {
+    "medalInfo":
+    {
+    "medalId":14,
+    "medalName":"甜蜜蜜2勋章",
+    "medalInfo":"当月提交2条客户表扬录音并被通过，即可点亮",
+    "medalType":3,
+    "growType":1,
+    "imageUrl":null,
+    "highestLevel":12,
+    "priorityNum":7,
+    "isEnable":1,
+    "updateUser":"zouweizheng",
+    "updateTime":1480702588000
+    },
+    "userList":[
+    {
+    "medalUserId":3,
+    "medalId":14,
+    "userId":"zouweizheng",
+    "medalLevel":1,
+    "updateUser":"zouweizheng",
+    "updateTime":1480702732000,
+    "userName":"邹伟政",
+    "workNumber":"1234003",
+    "takeOverNumber":"3",
+    "isInService":1,
+    "telephoneNumber":"13802880000",
+    "picturePath":"abcdef",
+    "groupId":101,
+    "groupName":"互联网二组",
+    "groupClassId":100001,
+    "groupClassName":"互联网11"
+    }
+    ]
+    }
 
-    "description": "gaoxiaowang",
-    "stats": "高效王",
-    "icon": "Bus",
-    "img": "assets/img/app/profile/gaoxiaowang.png",
-    "list": [{
-        "image": "assets/img/theme/icon/kameleon/Magician.svg",
-        "browser": "赵大锤",
-        "visits": "10,392",
-        "isVisitsUp": true,
-        "purchases": "4,214",
-        "isPurchasesUp": true,
-        "percent": "45%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/ninja.svg",
-        "browser": "李国柱",
-        "visits": "7,873",
-        "isVisitsUp": true,
-        "purchases": "3,031",
-        "isPurchasesUp": false,
-        "percent": "28%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/student-3.svg",
-        "browser": "陈狗蛋",
-        "visits": "5,890",
-        "isVisitsUp": false,
-        "purchases": "2,102",
-        "isPurchasesUp": false,
-        "percent": "17%",
-        "isPercentUp": false
-    }, {
-        "image": "assets/img/theme/icon/kameleon/student-3.svg",
-        "browser": "罗智锋",
-        "visits": "4,001",
-        "isVisitsUp": false,
-        "purchases": "1,001",
-        "isPurchasesUp": false,
-        "percent": "14%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/boss-3.svg",
-        "browser": "张大千",
-        "visits": "1,833",
-        "isVisitsUp": true,
-        "purchases": "83",
-        "isPurchasesUp": true,
-        "percent": "5%",
-        "isPercentUp": false
-    }]
-}, {
-
-    "description": "jiangshi",
-    "stats": "讲师",
-    "icon": "Checklist",
-    "img": "assets/img/app/profile/jiangshi.png",
-    "list": [{
-        "image": "assets/img/theme/icon/kameleon/Magician.svg",
-        "browser": "赵大锤",
-        "visits": "10,392",
-        "isVisitsUp": true,
-        "purchases": "4,214",
-        "isPurchasesUp": true,
-        "percent": "45%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/ninja.svg",
-        "browser": "李国柱",
-        "visits": "7,873",
-        "isVisitsUp": true,
-        "purchases": "3,031",
-        "isPurchasesUp": false,
-        "percent": "28%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/student-3.svg",
-        "browser": "陈狗蛋",
-        "visits": "5,890",
-        "isVisitsUp": false,
-        "purchases": "2,102",
-        "isPurchasesUp": false,
-        "percent": "17%",
-        "isPercentUp": false
-    }, {
-        "image": "assets/img/theme/icon/kameleon/student-3.svg",
-        "browser": "罗智锋",
-        "visits": "4,001",
-        "isVisitsUp": false,
-        "purchases": "1,001",
-        "isPurchasesUp": false,
-        "percent": "14%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/boss-3.svg",
-        "browser": "张大千",
-        "visits": "1,833",
-        "isVisitsUp": true,
-        "purchases": "83",
-        "isPurchasesUp": true,
-        "percent": "5%",
-        "isPercentUp": false
-    }]
-}, {
-
-    "description": "Akawang",
-    "stats": "A咖王",
-    "icon": "Desert",
-    "img": "assets/img/app/profile/Akawang.png",
-    "list": [{
-        "image": "assets/img/theme/icon/kameleon/Magician.svg",
-        "browser": "赵大锤",
-        "visits": "10,392",
-        "isVisitsUp": true,
-        "purchases": "4,214",
-        "isPurchasesUp": true,
-        "percent": "45%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/ninja.svg",
-        "browser": "李国柱",
-        "visits": "7,873",
-        "isVisitsUp": true,
-        "purchases": "3,031",
-        "isPurchasesUp": false,
-        "percent": "28%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/student-3.svg",
-        "browser": "陈狗蛋",
-        "visits": "5,890",
-        "isVisitsUp": false,
-        "purchases": "2,102",
-        "isPurchasesUp": false,
-        "percent": "17%",
-        "isPercentUp": false
-    }, {
-        "image": "assets/img/theme/icon/kameleon/student-3.svg",
-        "browser": "罗智锋",
-        "visits": "4,001",
-        "isVisitsUp": false,
-        "purchases": "1,001",
-        "isPurchasesUp": false,
-        "percent": "14%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/boss-3.svg",
-        "browser": "张大千",
-        "visits": "1,833",
-        "isVisitsUp": true,
-        "purchases": "83",
-        "isPurchasesUp": true,
-        "percent": "5%",
-        "isPercentUp": false
-    }]
-}, {
-
-    "description": "gaochanwang",
-    "stats": "高产王",
-    "icon": "Makeup",
-    "img": "assets/img/app/profile/gaochanwang.png",
-    "list": [{
-        "image": "assets/img/theme/icon/kameleon/Magician.svg",
-        "browser": "赵大锤",
-        "visits": "10,392",
-        "isVisitsUp": true,
-        "purchases": "4,214",
-        "isPurchasesUp": true,
-        "percent": "45%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/ninja.svg",
-        "browser": "李国柱",
-        "visits": "7,873",
-        "isVisitsUp": true,
-        "purchases": "3,031",
-        "isPurchasesUp": false,
-        "percent": "28%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/student-3.svg",
-        "browser": "陈狗蛋",
-        "visits": "5,890",
-        "isVisitsUp": false,
-        "purchases": "2,102",
-        "isPurchasesUp": false,
-        "percent": "17%",
-        "isPercentUp": false
-    }, {
-        "image": "assets/img/theme/icon/kameleon/student-3.svg",
-        "browser": "罗智锋",
-        "visits": "4,001",
-        "isVisitsUp": false,
-        "purchases": "1,001",
-        "isPurchasesUp": false,
-        "percent": "14%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/boss-3.svg",
-        "browser": "张大千",
-        "visits": "1,833",
-        "isVisitsUp": true,
-        "purchases": "83",
-        "isPurchasesUp": true,
-        "percent": "5%",
-        "isPercentUp": false
-    }]
-}, {
-
-    "description": "奖牌名称",
-    "stats": "奖牌副标题",
-    "icon": "Santa",
-    "img": "assets/img/theme/icon/kameleon/Santa.svg",
-    "list": [{
-        "image": "assets/img/theme/icon/kameleon/Magician.svg",
-        "browser": "赵大锤",
-        "visits": "10,392",
-        "isVisitsUp": true,
-        "purchases": "4,214",
-        "isPurchasesUp": true,
-        "percent": "45%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/ninja.svg",
-        "browser": "李国柱",
-        "visits": "7,873",
-        "isVisitsUp": true,
-        "purchases": "3,031",
-        "isPurchasesUp": false,
-        "percent": "28%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/student-3.svg",
-        "browser": "陈狗蛋",
-        "visits": "5,890",
-        "isVisitsUp": false,
-        "purchases": "2,102",
-        "isPurchasesUp": false,
-        "percent": "17%",
-        "isPercentUp": false
-    }, {
-        "image": "assets/img/theme/icon/kameleon/student-3.svg",
-        "browser": "罗智锋",
-        "visits": "4,001",
-        "isVisitsUp": false,
-        "purchases": "1,001",
-        "isPurchasesUp": false,
-        "percent": "14%",
-        "isPercentUp": true
-    }, {
-        "image": "assets/img/theme/icon/kameleon/boss-3.svg",
-        "browser": "张大千",
-        "visits": "1,833",
-        "isVisitsUp": true,
-        "purchases": "83",
-        "isPurchasesUp": true,
-        "percent": "5%",
-        "isPercentUp": false
-    }]
-}]
+]
+}

@@ -28,7 +28,8 @@
               .success(function(response)
                        {
                        		//上传成功的操作
-                       		console.log("上传成功");
+                          console.log("上传成功");
+                       		alert("上传成功");
                        })
               .error(function(response){
               				console.log("上传失败");

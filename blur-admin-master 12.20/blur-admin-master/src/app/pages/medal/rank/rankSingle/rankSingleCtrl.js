@@ -11,11 +11,13 @@
   /** @ngInject */
   function rankSingleCtrl($scope, $timeout, $http, baConfig, baUtil) {
     var pieColor = baUtil.hexToRGB(baConfig.colors.defaultText, 0.2);
-    $http.get('app/pages/medal/rank/rankSingle/rankSingle.json').then(function(response) {
-      $scope.charts = response.data.map(function(i) {
-        i.color = pieColor;
-        return i;
-      });
+    $http.get('/user/getMedalCharts').then(function(response) {
+    //$http.get('app/pages/medal/rank/rankSingle/rankSingle.json').then(function(response) {
+      //$scope.charts = response.data.map(function(i) {
+      $scope.charts = response.data.body.filter(function(m) {
+                return m.medalInfo.medalType == 1;
+            });
+      console.log($scope.charts);
     });
 
     function getRandomArbitrary(min, max) {

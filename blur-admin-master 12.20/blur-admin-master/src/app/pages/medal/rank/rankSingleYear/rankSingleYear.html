@@ -6,10 +6,10 @@
         <a style="cursor:pointer;" ng-click="chart.display=(chart.display=='none'?'block':'none')">
           <div class="pie-chart-item">
             <div class="kameleon-icon">
-              <img class="chart-imgicon" ng-src="{{::chart.img }}" alt=""></div>
+              <img class="chart-imgicon" ng-src="{{::chart.medalInfo.imageUrl}}" alt=""></div>
             <div class="description">
               <div>{{ chart.description }}</div>
-              <div class="description-stats">{{ ::chart.stats }}</div>
+              <div class="description-stats">{{ ::chart.medalInfo.medalName }}</div>
             </div>
           </div>
         </a>
@@ -25,11 +25,11 @@
               </tr>
             </thead>
             <tbody>
-              <tr ng-repeat="item in chart.list" class="no-top-border">
+              <tr ng-repeat="item in chart.userList" class="no-top-border">
                 <td>
-                  <img ng-src="{{::item.image}}" width="32" height="32"></td>
-                <td ng-class="nowrap">{{item.browser}}</td>
-                <td class="align-right">{{item.visits}}</td>
+                  <img ng-src="{{::item.picturePath}}" width="32" height="32"></td>
+                <td ng-class="nowrap">{{item.userName}}</td>
+                <td class="align-right">{{item.medalLevel}}</td>
                 <td class="table-arr"></td>
 
               </tr>

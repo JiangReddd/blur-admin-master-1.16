@@ -11,11 +11,12 @@
   /** @ngInject */
   function rankSingleYearCtrl($scope, $timeout, $http, baConfig, baUtil) {
     var pieColor = baUtil.hexToRGB(baConfig.colors.defaultText, 0.2);
-    $http.get('app/pages/medal/rank/rankSingleYear/rankSingleYear.json').then(function(response) {
-      $scope.charts = response.data.map(function(i) {
-        i.color = pieColor;
-        return i;
-      });
+    //$http.get('app/pages/medal/rank/rankSingleYear/rankSingleYear.json').then(function(response) {
+    $http.get('/user/getMedalCharts').then(function(response) {
+      $scope.charts = response.data.body.filter(function(m) {
+                return m.medalInfo.medalType == 2 || m.medalInfo.medalType == 3;
+            });
+      console.log($scope.charts);
     });
 
     function getRandomArbitrary(min, max) {
