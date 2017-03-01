@@ -22,7 +22,7 @@
             </thead>
             <tbody>
             <tr ng-repeat="item in managementCtrl.smartTableData | filter:search:strict">
-              <td class="table-id">{{item.groupId}}</td>
+              <td class="table-id">{{$index+1}}</td>
               <td>{{item.groupName}}</td>
               <td>{{item.groupTypeName}}</td>
               <td><a ui-sref="management.groupManagement.modify({groupId: item.groupId})">修改</a></td>

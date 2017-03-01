@@ -15,7 +15,7 @@
     	var vm = this;
 
         //$http.get('app/pages/medal/history/history.json').then(function(res) {
-        $http.get('/admin/getMedalRecord').then(function(res) {
+        $http.get('/user//user/getMyMedalRecord').then(function(res) {
             console.log(res.data.body);
             var messages = res.data.body.sort(function(a, b) {
                 if (a.medalRecordId > b.medalRecordId) return 1;
@@ -43,6 +43,17 @@
             var exchangeUpdateTime = vm.mail.updateTime;
             vm.mail.updateTime = newDate.toLocaleDateString(newDate.setTime(exchangeUpdateTime));
             console.log(vm.mail.updateTime); 
+
+
+            if (vm.mail.medalChangeLevel > 0 ) {
+                    vm.mail.upOrDown = "上升";
+                }else{
+                    vm.mail.upOrDown = "下降";
+                    vm.mail.medalChangeLevel = Math.abs(vm.mail.medalChangeLevel);
+                }
+
+
+
             console.log(vm.mail); 
 
 

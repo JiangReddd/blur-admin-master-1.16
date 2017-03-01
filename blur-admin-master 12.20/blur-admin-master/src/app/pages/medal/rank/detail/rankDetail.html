@@ -11,12 +11,12 @@
     </div>
     <div class="person-info row">
       <div class="col-lg-4 col-md-12  no-padding">
-        <img ng-src="{{detailCtrl.mail.name.split(' ')[0] | profilePicture}}" class="human-picture">
+        <img ng-src="{{detailCtrl.mail.userName | profilePicture}}" class="human-picture">
 
         <div class="name">
           <h2 class="name-h">{{detailCtrl.mail.userId}}</h2>
 
-          <h2 class="name-h second-name">邹伟政</h2>
+          <h2 class="name-h second-name">{{detailCtrl.mail.userName}}</h2>
 
           <div>
             <span class="mail-tag tag label {{detailCtrl.mail.tag}}">{{detailCtrl.mail.tag}}</span>
@@ -27,7 +27,7 @@
         <div class="contact-info phone-email">
           <div>
             <i class="ion-iphone"></i>
-            <span class="phone">777-777-7777</span>
+            <span class="phone">{{detailCtrl.mail.telephoneNumber}}</span>
           </div>
           <!-- <div>
             <i class="ion-email"></i>
@@ -62,7 +62,7 @@
     <div class="message-details">
         <p><span>职业生涯勋章数：</span><span>{{detailCtrl.mail.professionMedalSummary}}</span></p>
         <p><span>常规勋章数：</span><span>{{detailCtrl.mail.normalMedalSummary}}</span></p>
-        <p><span>勋章总数：</span><span>{{detailCtrl.mail.sum}}</span></p>
+        <p><span>勋章总数：</span><span>{{detailCtrl.mail.professionMedalSummary+detailCtrl.mail.normalMedalSummary}}</span></p>
     </div>
 <!--     <div class="attachment" ng-show="detailCtrl.mail.attachment">
       <span class="file-links">1 Attachment - <a href>View</a> | <a href>Download</a></span>

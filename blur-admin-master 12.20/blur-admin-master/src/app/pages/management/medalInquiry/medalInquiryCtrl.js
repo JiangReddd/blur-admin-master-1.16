@@ -23,7 +23,7 @@
                 console.log(d.body);
                 var dbody = d.body;
                 $.each(dbody,function(i){
-                        if(dbody[i].medalType == "1"){
+                        /*if(dbody[i].medalType == "1"){
                           dbody[i].medalType = "常规";
                         }
                         if(dbody[i].medalType == "2"){
@@ -37,7 +37,9 @@
                         var newDate = new Date();
                         newDate.setTime(exchangeUpdateTime);
                         console.log(newDate.toLocaleDateString());
-                        dbody[i].updateTime = newDate.toLocaleDateString();
+                        dbody[i].updateTime = newDate.toLocaleDateString();*/
+
+                        dbody[i].medalSummary = dbody[i].professionMedalSummary + dbody[i].normalMedalSummary;
 
                     });
                 vm[target] = dbody;
@@ -51,8 +53,8 @@
 
         vm.smartTablePageSize = 10;
 
-        getJson('app/pages/management/medalInquiry/medalInquiry.json', 'smartTableData').then(function ()
-        //getJson('/admin/getMedalRecord', 'smartTableData').then(function ()
+        //getJson('app/pages/management/medalInquiry/medalInquiry.json', 'smartTableData').then(function ()
+        getJson('/admin/getMedalInfoSummary', 'smartTableData').then(function ()
         {
 
            }

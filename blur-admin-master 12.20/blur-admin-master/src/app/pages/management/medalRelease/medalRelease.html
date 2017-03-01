@@ -12,6 +12,7 @@
               <th >勋章名称</th>
               <th >勋章类型</th>
               <th >组别名称</th>
+              <th >等级变动</th>
               <th >上传时间</th>
               <th >操作</th>
             </tr>
@@ -24,6 +25,8 @@
               <th><input ng-model="search.medalType" placeholder="" class="input-sm form-control search-input"
                          type="search"/></th>
               <th><input ng-model="search.groupName" placeholder="" class="input-sm form-control search-input" type="search"/>
+              </th>
+              <th><input ng-model="search.medalChangeLevel" placeholder="" class="input-sm form-control search-input" type="search"/>
               </th>
               <th><input ng-model="search.updateTime" placeholder="" class="input-sm form-control search-input" type="search"/>
               </th>
@@ -38,13 +41,14 @@
               <td>{{item.medalName}}</td>
               <td>{{item.medalType}}</td>
               <td>{{item.groupName}}</td>
+              <td>{{item.medalChangeLevel}}</td>
               <td>{{item.updateTime}}</td>
               <td><a ui-sref="management.medalRelease.detail({medalRecordId: item.medalRecordId})">详情</a></td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-              <td colspan="7" class="text-center">
+              <td colspan="8" class="text-center">
                 <div></div>
               </td>
             </tr>

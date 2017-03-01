@@ -7,7 +7,7 @@
 		"userId":"yangying",
 		"professionMedalSummary":2,
 		"normalMedalSummary":1,
-		"name": "Vlad Lugovsky",
+		"userName": "Vlad Lugovsky",
 		"updateUser":"zouweizheng",
 		"updateTime":1480702766000
 	},
@@ -16,7 +16,7 @@
 		"userId":"zouweizheng",
 		"professionMedalSummary":1,
 		"normalMedalSummary":1,
-		"name": "Andrey Hrabouski",
+		"userName": "Andrey Hrabouski",
 		"updateUser":"zouweizheng",
 		"updateTime":1482947383000
 	}]

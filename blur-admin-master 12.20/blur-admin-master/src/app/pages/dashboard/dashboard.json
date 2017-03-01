@@ -1,0 +1,44 @@
+{
+"errcode":0,
+"errmsg":"成功",
+	"body":
+	{
+	"medalInfo":
+	[
+		{
+		"medalRecordId":2,
+		"userId":"yangying",
+		"professionMedalSummary":1,
+		"normalMedalSummary":5,
+		"updateUser":"zouweizheng",
+		"updateTime":1487317358000
+		}
+	],
+	"creditInfo":
+	[
+		{
+		"id":null,
+		"useritemId":"yangyingItem002",
+		"userId":"yangying",
+		"userName":"杨莹",
+		"userIsInService":1,
+		"groupId":107,
+		"groupName":"综援二组",
+		"groupClassId":100003,
+		"groupClassName":"综援测试",
+		"workNumber":"1234002",
+		"takeOverNumber":"2",
+		"telephoneNumber":"13802880000",
+		"picturePath":"abcdef",
+		"creditItemId":"Item002",
+		"creditItemName":"宣传",
+		"creditItemIsEnable":1,
+		"credit":5,
+		"createUser":"yangying",
+		"creditTime":1483315200000,
+		"batchNumber":1,
+		"createTime":1487721600000
+		}
+	]
+	}
+}

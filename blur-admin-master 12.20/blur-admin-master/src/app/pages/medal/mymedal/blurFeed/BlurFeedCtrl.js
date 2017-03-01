@@ -26,8 +26,11 @@
 
     /** @ngInject */
     function BlurFeedCtrl1($http, $scope) {
-        $http.get('app/pages/medal/mymedal/feed1.json').then(function(res) {
-            $scope.feed = res.data;
+        //$http.get('app/pages/medal/mymedal/mymedal.json').then(function(res) {
+        $http.get('/user/getMyMedalInfo').then(function(res) {
+            $scope.feed = res.data.body.medalInfoAll.filter(function(m) {
+                return m.medalType == 2;
+            });
             $scope.expandMessage = function(message) {
                 message.expanded = !message.expanded;
             };
@@ -35,8 +38,10 @@
     }
 
         function BlurFeedCtrl2($http, $scope) {
-        $http.get('app/pages/medal/mymedal/feed2.json').then(function(res) {
-            $scope.feed = res.data;
+        $http.get('/user/getMyMedalInfo').then(function(res) {
+            $scope.feed = res.data.body.medalInfoAll.filter(function(m) {
+                return m.medalType == 1;
+            });
             $scope.expandMessage = function(message) {
                 message.expanded = !message.expanded;
             };
@@ -44,8 +49,10 @@
     }
 
         function BlurFeedCtrl3($http, $scope) {
-        $http.get('app/pages/medal/mymedal/feed3.json').then(function(res) {
-            $scope.feed = res.data;
+        $http.get('/user/getMyMedalInfo').then(function(res) {
+            $scope.feed = res.data.body.medalInfoOfMonth.filter(function(m) {
+                return m.medalType == 1;
+            });
             $scope.expandMessage = function(message) {
                 message.expanded = !message.expanded;
             };
@@ -53,8 +60,10 @@
     }
 
         function BlurFeedCtrl4($http, $scope) {
-        $http.get('app/pages/medal/mymedal/feed4.json').then(function(res) {
-            $scope.feed = res.data;
+        $http.get('/user/getMyMedalInfo').then(function(res) {
+            $scope.feed = res.data.body.medalInfoOfMonth.filter(function(m) {
+                return m.medalType == 2;
+            });
             $scope.expandMessage = function(message) {
                 message.expanded = !message.expanded;
             };
@@ -62,11 +71,22 @@
     }
 
         function BlurFeedCtrl5($http, $scope) {
+        $http.get('/user/getMyMedalInfo').then(function(res) {
+            $scope.feed = res.data.body.medalInfoOfMonth.filter(function(m) {
+                return m.medalType == 3;
+            });
+            $scope.expandMessage = function(message) {
+                message.expanded = !message.expanded;
+            };
+        });
+    }
+
+    /*function BlurFeedCtrl5($http, $scope) {
         $http.get('app/pages/medal/mymedal/feed5.json').then(function(res) {
             $scope.feed = res.data;
             $scope.expandMessage = function(message) {
                 message.expanded = !message.expanded;
             };
         });
-    }
+    }*/
 })();

@@ -37,8 +37,8 @@
                   return deferred.promise;
               }
 
-        //getJson('/admin/getCreditRecordAll', 'smartTableData').then(function ()
-        getJson('app/pages/management/accumulationInquiry/accumulationInquiry.json', 'smartTableData').then(function ()
+        getJson('/admin/getTotalCreditByAll', 'smartTableData').then(function ()
+        //getJson('app/pages/management/accumulationInquiry/accumulationInquiry.json', 'smartTableData').then(function ()
         {
 
            }

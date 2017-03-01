@@ -23,6 +23,7 @@
                     var accumulationYear = time;
                     //console.log(accumulationYear);
                   }
+                  console.log(d.body);
                   console.log(d.body[accumulationYear]);
                   $.each(d.body[accumulationYear],function(i){
 
@@ -35,6 +36,7 @@
                     });
                   vm[target] = d.body[accumulationYear];
                   vm.records = d.body.years;
+                  console.log(vm.records);
                   //vm.records = d.body.year;
                   deferred.resolve();
               }
@@ -43,14 +45,18 @@
               return deferred.promise;
           }
 
-          vm.getTime = new Date();
-          var accumulationYearNow = String(vm.getTime.getYear() + 1900);
-          //console.log(accumulationYearNow);
-          getJson('/user/getMyCreditItem', 'accumulationData').then(function ()
-          //getJson('app/pages/accumulation/myAccumulation/myAccumulation.json', 'accumulationData',accumulationYearNow).then(function ()
-          {
-           
-          });
+          //先取第一年的作为表格数据
+          $http.get("/user/getMyCreditItem").then(function(res){
+          //$http.get("app/pages/accumulation/myAccumulation/myAccumulation.json").then(function(res){
+            var accumulationYearFirst = res.data.body.years[0];
+            console.log(accumulationYearFirst);
+            getJson('/user/getMyCreditItem', 'accumulationData',accumulationYearFirst).then(function ()
+            //getJson('app/pages/accumulation/myAccumulation/myAccumulation.json', 'accumulationData',accumulationYearFirst).then(function ()
+            {
+             
+            });
+          })
+
 
           /*vm.test = new Date();
           vm.test1 = vm.test.getYear() + 1901;

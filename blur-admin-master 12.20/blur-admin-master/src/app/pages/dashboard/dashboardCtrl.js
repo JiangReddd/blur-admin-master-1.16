@@ -11,8 +11,14 @@
   /** @ngInject */
   function dashboardCtrl($scope, $rootScope, fileReader, $filter, $uibModal, $http,$stateParams) {
     var vm = this;
-    $rootScope.userId = "yangying";
-    console.log($rootScope.userId);
+    //$http.get("app/pages/dashboard/dashboard.json").then(function(res){
+    $http.get("user/getMyMedalAndCredit").then(function(res){
+    	vm.message = res.data.body;
+    	$rootScope.userId = vm.message.medalInfo[0].userId;
+
+    	console.log(vm.message);
+    	console.log($rootScope.userId);
+    })
 
   }
 

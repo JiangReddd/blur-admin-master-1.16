@@ -39,6 +39,14 @@
                         //console.log(newDate.toLocaleDateString());
                         dbody[i].updateTime = newDate.toLocaleDateString();
 
+                        if (dbody[i].medalChangeLevel > 0 ) {
+                            dbody[i].medalChangeLevelIcon = true;
+                        }else{
+                            dbody[i].medalChangeLevelIcon = false;
+                        }
+
+                        dbody[i].medalChangeLevel = Math.abs(dbody[i].medalChangeLevel);
+
                     });
                 vm[target] = dbody;
 
@@ -52,7 +60,7 @@
         vm.smartTablePageSize = 10;
 
         //getJson('app/pages/medal/history/history.json', 'smartTableData').then(function ()
-        getJson('/admin/getMedalRecord', 'smartTableData').then(function ()
+        getJson('/user/getMyMedalRecord', 'smartTableData').then(function ()
         {
 
            }

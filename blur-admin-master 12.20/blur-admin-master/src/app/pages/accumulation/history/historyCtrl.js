@@ -51,8 +51,8 @@
 
         vm.smartTablePageSize = 10;
 
-        getJson('app/pages/accumulation/history/history.json', 'smartTableData').then(function ()
-        //getJson('/admin/getMedalRecord', 'smartTableData').then(function ()
+        //getJson('app/pages/accumulation/history/history.json', 'smartTableData').then(function ()
+        getJson('/user/getMyCreditRecord', 'smartTableData').then(function ()
         {
 
            }

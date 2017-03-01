@@ -2,10 +2,10 @@
 <div class="feed-messages-container" track-width="smallContainerWidth" min-width="360">
   <div class="feed-message" ng-repeat="message in feed" ng-click="expandMessage(message)">
     <div class="message-icon" ng-if="message.type == 'text-message'">
-      <img class="photo-icon" ng-src="{{::( message.medalEnName | profilePicture )}}">
+      <img class="photo-icon" ng-src="{{::( message.imageUrl | profilePicture )}}">
     </div>
     <div class="message-icon" ng-if="message.type != 'text-message'">
-      <img class="photo-icon" ng-src="{{::( message.medalEnName | profilePicture )}}">
+      <img class="photo-icon" ng-src="{{::( message.imageUrl | profilePicture )}}">
       <span class="sub-photo-icon" ng-class="::message.type"></span>
     </div>
     <div class="text-block text-message">
@@ -13,7 +13,7 @@
         <span class="author">{{ ::message.medalName }}</span>
       </div>
       <div class="message-content line-clamp">
-        等级：{{::message.level}}
+        等级：{{::message.medalLevel}}
       </div>
 <!--       <div class="preview" ng-show="message.expanded" ng-if="message.preview">
         <a href="{{::message.link}}" target="_blank">

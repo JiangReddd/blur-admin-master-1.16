@@ -93,7 +93,7 @@
 			data.userId = vm.mail.userId;
 			data.userName = vm.mail.userName;
 			data.isInService = $("input:checked").val();
-			data.workNumber = vm.mail.workNumber;
+			data.takeOverNumber = vm.mail.takeOverNumber;
 			data.roleId = vm.standardRoleSelected;
 			data.groupId = vm.standardSelected;
 			console.log(data);

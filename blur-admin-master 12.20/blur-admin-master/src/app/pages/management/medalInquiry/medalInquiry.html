@@ -9,23 +9,20 @@
             <tr class="sortable ">
               <th class="table-id">#</th>
               <th >用户名</th>
-              <th >勋章名称</th>
-              <th >勋章类型</th>
-              <th >组别名称</th>
-              <th >上传时间</th>
+              <th >职业生涯勋章数</th>
+              <th >常规勋章数</th>
+              <th >勋章总数</th>
               <!-- <th >操作</th> -->
             </tr>
             <tr>
               <th></th>
               <th><input ng-model="search.userName" placeholder="" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input ng-model="search.medalName" placeholder="" class="input-sm form-control search-input"
+              <th><input ng-model="search.professionMedalSummary" placeholder="" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input ng-model="search.medalType" placeholder="" class="input-sm form-control search-input"
-                         type="search"/></th>
-              <th><input ng-model="search.groupName" placeholder="" class="input-sm form-control search-input" type="search"/>
+              <th><input ng-model="search.normalMedalSummary" placeholder="" class="input-sm form-control search-input" type="search"/>
               </th>
-              <th><input ng-model="search.updateTime" placeholder="" class="input-sm form-control search-input" type="search"/>
+              <th><input ng-model="search.medalSummary" placeholder="" class="input-sm form-control search-input" type="search"/>
               </th>
               <!-- <th></th> -->
             </tr>
@@ -35,16 +32,15 @@
             <tr ng-repeat="item in inquiryCtrl.smartTableData | filter:search:strict">
               <td class="table-id">{{$index+1}}</td>
               <td>{{item.userName}}</td>
-              <td>{{item.medalName}}</td>
-              <td>{{item.medalType}}</td>
-              <td>{{item.groupName}}</td>
-              <td>{{item.updateTime}}</td>
+              <td>{{item.professionMedalSummary}}</td>
+              <td>{{item.normalMedalSummary}}</td>
+              <td>{{item.medalSummary}}</td>
               <!-- <td><a ui-sref="management.medalRelease.detail({medalRecordId: item.medalRecordId})">详情</a></td> -->
             </tr>
             </tbody>
             <tfoot>
             <tr>
-              <td colspan="7" class="text-center">
+              <td colspan="6" class="text-center">
                 <div></div>
               </td>
             </tr>
