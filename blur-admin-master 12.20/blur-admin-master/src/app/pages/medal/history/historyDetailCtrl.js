@@ -15,7 +15,7 @@
     	var vm = this;
 
         //$http.get('app/pages/medal/history/history.json').then(function(res) {
-        $http.get('/user//user/getMyMedalRecord').then(function(res) {
+        $http.get('/user/getMyMedalRecord').then(function(res) {
             console.log(res.data.body);
             var messages = res.data.body.sort(function(a, b) {
                 if (a.medalRecordId > b.medalRecordId) return 1;

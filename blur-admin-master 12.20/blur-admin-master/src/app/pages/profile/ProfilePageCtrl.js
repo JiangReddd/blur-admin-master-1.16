@@ -12,7 +12,7 @@
   function ProfilePageCtrl($scope, $rootScope, fileReader, $filter, $uibModal, $http,$stateParams) {
     var vm = this;
 
-    $http.get('/admin/getUserInfoAll').then(function(res) {
+    /*$http.get('/admin/getUserInfoAll').then(function(res) {
     //$http.get('app/pages/management/userManagement/userManagement.json').then(function(res) {
       var messages = res.data.body.userInfoAll.sort(function(a, b) {
         if (a.userId > b.userId) return 1;
@@ -44,6 +44,21 @@
 
       });
 
+      
+    });*/
+
+    $http.get('/user/getMyUserInfo').then(function(res) {
+    //$http.get('app/pages/management/userManagement/userManagement.json').then(function(res) {
+      vm.mail = res.data.body;
+
+
+      if(vm.mail.isInService == 1){
+        vm.mail.isInService = "在职";
+      } 
+      if(vm.mail.isInService == 0){
+        vm.mail.isInService = "离职";
+      }   
+      console.log(vm.mail);
       
     });
 

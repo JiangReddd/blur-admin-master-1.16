@@ -42,6 +42,17 @@
           order: 1000,
         }
         
+      }).state('profile.uploadPicture', {
+        url: '/profile/uploadPicture',
+        title: '个人照片',
+        templateUrl: 'app/pages/profile/profilePicture.html',
+        controller: 'ProfilePictureCtrl',
+        controllerAs: 'pictureCtrl',
+        sidebarMeta: {
+          icon: 'ion-android-home',
+          order: 1000,
+        }
+        
       });
       $urlRouterProvider.when('/profile','/profile/info/yangying');
 
