@@ -29,6 +29,7 @@
 			})[0];   
 
 			var medalType = vm.mail.medalType;
+			vm.pic = vm.mail.imageUrl;
 			//console.log(medalType);
 			if(medalType == "常规"){
 				$(".selectpicker option:eq(0)").attr("selected",true);
@@ -54,11 +55,50 @@
 
 		});
 
+		$(".filename").change(function(){
+	      $(this).parents(".uploader").find(".filename").val($(this).val());
+	      //console.log($(this).val());
+	      vm.imageUrl = $(this).val();
+
+	      vm.fileUpload();
+	    });
+	    $(".filename").each(function(){
+	      if($(this).val()==""){
+	        $(this).parents(".uploader").find(".filename").val("未选择上传文件");
+	      }
+	    });
+
+	    vm.fileUpload = function() {
+	      //var url="http://jiqun.nj-itc.com.cn:8082/upload/uploadPicture";
+	      var url='/user/uploadPicture';
+	      var data = new FormData();
+	      var file = document.querySelector('input[type=file]').files[0];
+	      data.append("file",file);
+	      console.log(file);
+	      console.log(data);
+	      $http({
+	        method:"POST",
+	        url:url,
+	        data:data,
+	        headers: {'Content-Type':undefined},
+	      }).success( function ( response )
+	      {
+	        //上传成功的操作
+	        console.log("upload success");
+	        vm.pic = response.body;
+	        //console.log("picture path:"+vm.pic );
+	        
+	      }).error(function(response){
+	        console.log("图片上传失败");
+	      });
+	    }
+
 		vm.submit = function(){
 			var data = {};
 			data.medalId = vm.mail.medalId;
 			data.medalName = vm.mail.medalName;
 			data.medalInfo = vm.mail.medalInfo;
+			data.imageUrl = vm.pc;
 			//data.medalEnName = vm.mail.medalEnName;
 			data.growType = $("input[name='growType']:checked").val();
 			data.highestLevel = vm.mail.highestLevel;

@@ -13,7 +13,7 @@
 
     var vm = this;
 
-    $http.get('/admin/getUserInfoAll').then(function(res) {
+/*    $http.get('/admin/getUserInfoAll').then(function(res) {
     //$http.get('app/pages/management/userManagement/userManagement.json').then(function(res) {
       var messages = res.data.body.userInfoAll.sort(function(a, b) {
         if (a.userId > b.userId) return 1;
@@ -39,11 +39,36 @@
       });
 
 
-      /*console.log(messages);
+
+      console.log(messages);
       console.log($stateParams);
-      console.log(vm.mail);*/
+      console.log(vm.mail);
+      
+    });*/
+
+    $http.get('/user/getMyUserInfo').then(function(res) {
+    //$http.get('app/pages/management/userManagement/userManagement.json').then(function(res) {
+      vm.mail = res.data.body;
+
+
+      vm.pic = vm.mail.picturePath;
+      console.log(vm.pic);
       
     });
+
+
+    vm.filePathSave = function(){
+      var url2 = "/user/updateUserInfoPicture";
+        var data2 = {};
+        data2.picturePath = vm.pic;
+        $http.post(url2,data2)
+        .success(function(){
+          alert("图片保存成功");
+        })
+        .error(function(){
+          alert("图片保存失败");
+        })
+    }
 
 
     vm.fileUpload = function() {
@@ -64,10 +89,10 @@
         //上传成功的操作
         console.log("upload success");
         vm.pic = response.body;
-        auth(vm.pic);
-        console.log("picture path:"+vm.pic );
+        //console.log("picture path:"+vm.pic );
+        
       }).error(function(response){
-        console.log("error");
+        console.log("图片上传失败");
       });
     }
 

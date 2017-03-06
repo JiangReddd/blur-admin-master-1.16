@@ -14,7 +14,7 @@
           ba-panel
           ba-panel-title="信息修改"
           ba-panel-class="with-scroll">
-          <form class="form-horizontal">
+          <div class="form-horizontal">
             <div class="form-group">
               <label for="ruleTitle" class="col-sm-2 control-label">勋章名称</label>
               <div class="col-sm-8">
@@ -67,7 +67,29 @@
             <div class="form-group">
               <label for="ruleIntro" class="col-sm-2 control-label">勋章图片</label>
               <div class="col-sm-8">
-                <button class="btn btn-primary" ui-sref="management.medalOperationList.upload({medalId: detailCtrl.mail.medalId})">上传图片</button>
+                <div class="form-group row clearfix">
+                  <div class="col-sm-2">
+                    <div class="userpic">
+                      <div class="userpic-wrapper">
+                        <img src="/user/showPic?picturePath={{detailCtrl.pic}}">
+                      </div>
+                      <!-- <i class="ion-ios-close-outline" ng-click="removePicture()" ng-if="!noPicture"></i>
+                      <a href class="change-userpic" ng-click="uploadPicture()">更换头像</a>
+                      <input type="file" ng-show="false" id="uploadFile" ng-file-select="onFileSelect($files)"> -->
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-sm-offset-2">
+                    <form method="POST" accept-charset="utf-8" enctype="multipart/form-data" ng-submit="detailCtrl.filePathSave()">
+                      <section class="col-md-6 col-lg-6">
+                            <div class="uploader blue">
+                              <input style="display: none" type="text" class="filename" readonly/>
+                              <input class="btn btn-primary" type="button" name="file" class="button" value="选择文件"/>
+                              <input type="file" size="30" file-model="detailCtrl.myFile"/>
+                            </div>
+                      </section>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="form-group">
@@ -115,10 +137,91 @@
                 <button type="submit" class="btn btn-warning" ng-click="detailCtrl.submit()">保存</button>
               </div>
             </div>
-          </form>
+          </div>
       </div>
       
   <div ng-show="!detailCtrl.mail">
     <h5 ng-class="text-center">Nothing to show</h5>
   </div>
 </div>
+
+
+<style>
+.uploader{
+position:relative;
+display:inline-block;
+overflow:hidden;
+cursor:default;
+padding:0;
+}
+
+.filename{
+float:left;
+display:inline-block;
+outline:0 none;
+height:32px;
+width:180px;
+margin:0;
+padding:8px 10px;
+overflow:hidden;
+cursor:default;
+border:1px solid;
+border-right:0;
+font:9pt/100% Arial, Helvetica, sans-serif;
+color:#444;
+text-shadow:1px 1px 0px #fff;
+text-overflow:ellipsis;
+white-space:nowrap;
+
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+.button{
+float:left;
+height:32px;
+display:inline-block;
+outline:0 none;
+padding:8px 12px;
+margin:0;
+cursor:pointer;
+border:1px solid;
+font:bold 9pt/100% Arial, Helvetica, sans-serif;
+}
+
+
+.uploader input[type=file]{
+position:absolute;
+top:0; right:0; bottom:0;
+border:0;
+padding:0; margin:0;
+height:30px;
+cursor:pointer;
+filter:alpha(opacity=0);
+-moz-opacity:0;
+-khtml-opacity: 0;
+opacity:0;
+}
+
+input[type=button]::-moz-focus-inner{padding:0; border:0 none; -moz-box-sizing:content-box;}
+input[type=button]::-webkit-focus-inner{padding:0; border:0 none; -webkit-box-sizing:content-box;}
+input[type=text]::-moz-focus-inner{padding:0; border:0 none; -moz-box-sizing:content-box;}
+input[type=text]::-webkit-focus-inner{padding:0; border:0 none; -webkit-box-sizing:content-box;}
+
+
+.blue .button{
+color:#fff;
+text-shadow:1px 1px 0px #09365f;
+background:#3b75b4;
+border-color:#09365f;
+transition:.2s;
+-o-transition:.2s;
+-moz-transition:.2s;
+-webkit-transition:.2s;
+}
+
+.blue:hover .button{
+background:#064884;
+}
+</style>

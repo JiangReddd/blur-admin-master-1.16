@@ -17,24 +17,45 @@
           <form class="form-horizontal">
             <div class="form-group">
               <label class="col-sm-2 control-label">勋章图片</label>
-              <div class="col-sm-8">
-                <div class="uploader blue">
-                            <input type="text" class="filename" readonly/>
-                            <input type="button" name="file" class="button" value="选择文件"/>
-                            <input type="file" size="30"/>
+              <div class="col-sm-4">
+                <div class="userpic">
+                  <div class="userpic-wrapper">
+                    <img src="/user/showPic?picturePath={{uploadCtrl.pic}}">
+                  </div>
+                  <!-- <i class="ion-ios-close-outline" ng-click="removePicture()" ng-if="!noPicture"></i>
+                  <a href class="change-userpic" ng-click="uploadPicture()">更换头像</a>
+                  <input type="file" ng-show="false" id="uploadFile" ng-file-select="onFileSelect($files)"> -->
                 </div>
               </div>
+              <div class="col-sm-6">
+              <div class="row ng-scope">
+                <div class="progress-buttons-container default-text">
+                  <div class="row">
+                    <form method="POST" accept-charset="utf-8" enctype="multipart/form-data" ng-submit="uploadCtrl.filePathSave()">
+                      <section class="col-md-12 col-lg-12">
+                        <span class="button-title">上传勋章图片</span>
+                            <div class="uploader blue">
+                              <input type="text" class="filename" readonly/>
+                              <input type="button" name="file" class="button" value="选择文件"/>
+                              <input type="file" size="30" file-model="uploadCtrl.myFile"/>
+                            </div>
+                      </section>
+                      <section class="col-md-12 col-lg-12">
+                        <span class="button-title"></span>
+                        <button type="submit" class="btn btn-success rotate-back">上传</button>
+                      </section>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
 <!--             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
                 <img ng-src="{{detailCtrl.mail.name.split(' ')[0] | profilePicture}}" class="human-picture">
               </div>
             </div> -->
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-warning" ng-click="uploadCtrl.submit()">保存</button>
-              </div>
-            </div>
+
           </form>
       </div>
       

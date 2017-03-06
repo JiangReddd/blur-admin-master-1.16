@@ -12,27 +12,14 @@
 	function medalOperationListUploadCtrl($http,$stateParams) {
 		var vm = this;
 
+		//$http.get('/admin/getMedalAll').then(function(res) {
 		$http.get('app/pages/management/medalOperationList/medalOperationList.json').then(function(res) {
-			var messages = res.data.sort(function(a, b) {
-				if (a.medalId > b.medalId) return 1;
-				if (a.medalId < b.medalId) return -1;
-			}).reverse();
+			var messages = res.data.body;
+			console.log(messages);
 			vm.mail = messages.filter(function(m) {
 				return m.medalId == $stateParams.medalId;
 			})[0];   
-			console.log(vm.mail);
-			if(vm.mail.isEnable == "1"){
-				$("#isEnable").attr("checked",true);
-			}
-			if(vm.mail.isEnable == "0"){
-				$("#isEnable1").attr("checked",true);
-			}; 
-			if(vm.mail.growType == "1"){
-				$("#growType").attr("checked",true);
-			}
-			if(vm.mail.growType == "0"){
-				$("#growType1").attr("checked",true);
-			}; 
+			 
 		});
 
 		$("input[type=file]").change(function(){
